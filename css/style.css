@@ -1,0 +1,117 @@
+/*
+COLORS:
+
+Light green: #7ed56f
+Medium green: #55c57a
+Dark green: #28b485
+
+*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Noto", sans-serif;
+    line-height: 1.7;
+    font-size: 16px;
+    font-weight: 400;
+    color: #777;
+    padding: 30px;
+}
+
+.header{
+    height: 95vh;
+    background-image: linear-gradient(
+        to right bottom, #7ed56fdc, 
+        #28b485da), 
+        url('../img/hero.jpg');
+
+    /* always try to fit inside the box entirely*/
+    background-size: cover;
+
+    /* top position of the image remains stable while bottom will be croped while adjustiing the screen size because of box-sizing  */
+    background-position: top;
+
+    /* in these x and y axis contained area shuould be visible in the header */
+    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+
+    position: relative;
+}
+
+.logo-box{
+    position: absolute;
+    top: 40px;
+    left: 40px;
+}
+.logo{
+
+    height: 35px;
+}
+
+.text-box{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    /* to fix shaking while animation in sub contents */
+    backface-visibility: hidden;
+}
+
+.primery-title{
+    color: #fff;
+    text-transform: uppercase;    
+}
+.primery-title-main{
+    font-size: 60px;
+    display: block;
+    letter-spacing: 30px;
+    animation-name: moveLeftoRight;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+    /* animation-delay: 1s;
+    animation-iteration-count: 5; */
+}
+.primery-title-sub{
+    font-size: 20px;
+    display: block;
+    letter-spacing: 15px;
+    animation: moveRightoLeft 1.5s ease-out;
+}
+
+@keyframes moveLeftoRight {
+    
+    0%{
+        opacity: 0;
+        transform: translateX(-100px) rotate(-100deg);
+    }
+
+    60%{
+        transform: translateX(20px);
+    }   
+    100%{
+        opacity: 1;
+        transform: translateX(0px) ;
+    }
+
+}
+@keyframes moveRightoLeft {
+    
+    0%{
+        opacity: 0;
+        transform: translateX(100px);
+    }
+
+    60%{
+        transform: translateX(-20px);
+    }   
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+
+}
+
