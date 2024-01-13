@@ -1,9 +1,10 @@
 /*
 COLORS:
 
-Light green: #7ed56f
-Medium green: #55c57a
-Dark green: #28b485
+Light green: #EEF5FF
+Medium green: #B4D4FF
+Dark green: #86B6F6
+Dark green: #176B87
 
 */
 
@@ -25,8 +26,8 @@ body{
 .header{
     height: 95vh;
     background-image: linear-gradient(
-        to right bottom, #7ed56fdc, 
-        #28b485da), 
+        to right bottom,#b4d5ffd3, 
+        #176B87), 
         url('../img/hero.jpg');
 
     /* always try to fit inside the box entirely*/
@@ -78,8 +79,11 @@ body{
 .primery-title-sub{
     font-size: 20px;
     display: block;
-    letter-spacing: 15px;
+    letter-spacing: 17px;
     animation: moveRightoLeft 1.5s ease-out;
+
+    /* adjustment */
+    margin-left: 10px;
 }
 
 @keyframes moveLeftoRight {
