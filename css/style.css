@@ -83,7 +83,7 @@ body{
     animation: moveRightoLeft 1.5s ease-out;
 
     /* adjustment */
-    margin-left: 10px;
+    margin-left: 5px;
     margin-bottom: 40px;
 }
 
@@ -91,7 +91,7 @@ body{
     
     0%{
         opacity: 0;
-        transform: translateX(-100px) rotate(-100deg);
+        transform: translateX(-100px);
     }
 
     60%{
@@ -118,6 +118,17 @@ body{
         transform: translateX(0px);
     }
 
+}
+@keyframes btnMoveUp{
+
+    0%{
+        transform: translateY(40px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
 }
 
 .btn:link,
@@ -156,10 +167,15 @@ body{
     z-index: -1;
     transition: all 0.4s;
 }
-.btn-white::after{
+.btn::after{
     background-color: #ffffff;
 }
 .btn-white:hover::after{
     transform: scaleX(1.4) scaleY(1.6);
     opacity: 0;
+}
+.btn-animated{
+    animation: btnMoveUp 1s ease-out 0.75s;
+    /* animation will be applied to the button even before animation start due to delay */
+    animation-fill-mode: backwards;
 }
