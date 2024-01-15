@@ -1,0 +1,14 @@
+{
+  "name": "traveller",
+  "version": "1.0.0",
+  "description": "a website for travellers",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "arjun liljo",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^9.0.0"
+  }
+}
