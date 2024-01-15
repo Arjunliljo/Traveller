@@ -8,8 +8,11 @@ Dark green: #176B87
 
 */
 
-$color-primery-light:#EEF5FF;
-$color-primery-dark:#86B6F6;
+$color-primery-light:#5596f1;
+$color-primery-dark:#0e2c53;
+
+$color-white:#fff;
+$color-gray:#777;
 
 *,
 *::after,
@@ -33,8 +36,8 @@ body{
 .header{
     height: 95vh;
     background-image: linear-gradient(
-        to right bottom,$color-primery-light, 
-        $color-primery-dark), 
+        to right bottom,rgba($color-primery-light, 0.8), 
+        rgba($color-primery-dark, 0.8)), 
         url('../img/hero.jpg');
 
     /* always try to fit inside the box entirely*/
@@ -70,7 +73,7 @@ body{
 }
 
 .primery-title{
-    color: #fff;
+    color: $color-white;
     text-transform: uppercase;    
 }
 .primery-title--main{
@@ -149,8 +152,8 @@ body{
     
 }
 .btn--white{
-    color: #777;
-    background-color: #fff ;
+    color: $color-gray;
+    background-color: $color-white ;
 }
 .btn:hover{
     transform: translateY(-4px);
@@ -174,9 +177,9 @@ body{
     transition: all 0.4s;
 }
 .btn::after{
-    background-color: #ffffff;
+    background-color: $color-white;
 }
-.btn-white:hover::after{
+.btn:hover::after{
     transform: scaleX(1.4) scaleY(1.6);
     opacity: 0;
 }
