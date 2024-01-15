@@ -35,14 +35,12 @@ body {
   /* in these x and y axis contained area shuould be visible in the header */
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   position: relative; }
-
-.header__logo-box {
-  position: absolute;
-  top: 4rem;
-  left: 4rem; }
-
-.header__logo {
-  height: 35px; }
+  .header__logo-box {
+    position: absolute;
+    top: 4rem;
+    left: 4rem; }
+  .header__logo {
+    height: 35px; }
 
 .text-box {
   position: absolute;
@@ -56,24 +54,22 @@ body {
 .primery-title {
   color: #fff;
   text-transform: uppercase; }
-
-.primery-title--main {
-  font-size: 6rem;
-  display: block;
-  letter-spacing: 3rem;
-  animation-name: moveLeftoRight;
-  animation-duration: 1.5s;
-  animation-timing-function: ease-out;
-  /* animation-delay: 1s;
-    animation-iteration-count: 5; */ }
-
-.primery-title--sub {
-  font-size: 2rem;
-  display: block;
-  letter-spacing: 1.7rem;
-  animation: moveRightoLeft 1.5s ease-out;
-  /* adjustment */
-  margin-bottom: 5rem; }
+  .primery-title--main {
+    font-size: 6rem;
+    display: block;
+    letter-spacing: 3rem;
+    animation-name: moveLeftoRight;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+    /* animation-delay: 1s;
+        animation-iteration-count: 5; */ }
+  .primery-title--sub {
+    font-size: 2rem;
+    display: block;
+    letter-spacing: 1.7rem;
+    animation: moveRightoLeft 1.5s ease-out;
+    /* adjustment */
+    margin-bottom: 5rem; }
 
 @keyframes moveLeftoRight {
   0% {
@@ -110,19 +106,20 @@ body {
   padding: 1.5rem 4rem;
   display: inline-block;
   border-radius: 3rem;
-  transition: all .2s;
-  position: relative; }
+  transition: all .5s;
+  position: relative;
+  backface-visibility: hidden; }
 
-.btn--white {
+.btn-white {
   color: #777;
   background-color: #fff; }
 
 .btn:hover {
-  transform: translateY(-4px);
+  transform: translateY(-5px);
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2); }
 
 .btn:active {
-  transform: translateY(-1px);
+  transform: translateY(0px);
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2); }
 
 .btn::after {
@@ -135,7 +132,7 @@ body {
   left: 0px;
   border-radius: 10rem;
   z-index: -1;
-  transition: all 0.4s; }
+  transition: all 0.5s; }
 
 .btn::after {
   background-color: #fff; }
