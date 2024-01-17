@@ -1,5 +1,5 @@
 .btn{
-    backface-visibility: hidden;
+  backface-visibility: hidden;
     &-white{
         color: $color-gray;
         background-color: $color-white ;
@@ -25,6 +25,8 @@
         position: relative;
         backface-visibility: hidden;
         will-change: transform;
+
+        // not resolving flickering
         // transform: translate3d(0, 0, 0);
         // transform: translateY(0);
 
