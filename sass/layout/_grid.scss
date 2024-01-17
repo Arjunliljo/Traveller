@@ -1,0 +1,20 @@
+.row{
+    max-width: $grid-width;
+    background-color: $color-gray;
+    color: $color-white;
+    margin: 0 auto;
+
+    &:not(:last-child){
+        margin-bottom: $grid-gutter-vertical;
+    }
+
+    .col-1-2{
+        width: calc((100% - #{$grid-gutter-horizontal}) / 2);
+        background-color: orangered;
+        float: left;
+
+        &:not(:last-child){
+            margin-right: $grid-gutter-horizontal;
+        }
+    }
+}

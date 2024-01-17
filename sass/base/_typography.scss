@@ -15,7 +15,7 @@ body{
     transform: translate(-50%, -50%);
     text-align: center;
     /* to fix shaking while animation in sub contents */
-  //  backface-visibility: hidden;
+    backface-visibility: hidden;
 }
 
 .primery-title{
