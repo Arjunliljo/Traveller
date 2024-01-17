@@ -76,9 +76,12 @@ body {
     /* adjustment */
     margin-bottom: 5rem; }
 
+.u-center-text {
+  text-align: center; }
+
 .header {
   height: 95vh;
-  background-image: linear-gradient(to right bottom, rgba(85, 150, 241, 0.8), rgba(14, 44, 83, 0.8)), url("../img/hero.jpg");
+  background-image: linear-gradient(to right bottom, rgba(85, 150, 241, 0.8), rgba(15, 57, 112, 0.8)), url("../img/hero.jpg");
   /* always try to fit inside the box entirely*/
   background-size: cover;
   /* top position of the image remains stable while bottom will be croped while adjustiing the screen size because of box-sizing  */
@@ -100,12 +103,27 @@ body {
   margin: 0 auto; }
   .row:not(:last-child) {
     margin-bottom: 8rem; }
-  .row .col-1-2 {
-    width: calc((100% - 6rem) / 2);
+  .row [class^="col-"] {
     background-color: orangered;
     float: left; }
-    .row .col-1-2:not(:last-child) {
+    .row [class^="col-"]:not(:last-child) {
       margin-right: 6rem; }
+  .row::after {
+    content: "";
+    display: table;
+    clear: both; }
+  .row .col-1-2 {
+    width: calc((100% - 6rem) / 2); }
+  .row .col-1-3 {
+    width: calc((100% - 2* 6rem) / 3); }
+  .row .col-2-3 {
+    width: calc(((100% - 2* 6rem) / 3) * 2 + 6rem); }
+  .row .col-1-4 {
+    width: calc((100% - 3* 6rem)/ 4); }
+  .row .col-2-4 {
+    width: calc(2 *((100% - 3* 6rem)/ 4) + 6rem); }
+  .row .col-3-4 {
+    width: calc(3 *((100% - 3* 6rem)/ 4) + 6rem * 2); }
 
 @media only screen and (max-width: 768px) {
   html {
@@ -152,3 +170,22 @@ body {
     .btn:link:active, .btn:visited:active {
       transform: translateY(-1px);
       box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2); }
+
+.section-about {
+  background-color: #f7f7f7;
+  padding: 25rem 0;
+  margin-top: -20vh; }
+
+.heading-secondary {
+  font-size: 3.5rem;
+  font-weight: 700;
+  display: inline-block;
+  text-transform: uppercase;
+  background: linear-gradient(to right, #5596f1, #0f3970);
+  background-clip: text;
+  color: transparent;
+  transition: all .5s;
+  cursor: pointer; }
+  .heading-secondary:hover {
+    transform: skewY(3deg) skewX(5deg) scale(1.1);
+    text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2); }
