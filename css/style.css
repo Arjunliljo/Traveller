@@ -190,5 +190,5 @@ body {
   transition: all .5s;
   cursor: pointer; }
   .heading-secondary:hover {
-    transform: skewY(3deg) skewX(5deg) scale(1.1);
+    transform: skewY(3deg) skewX(5deg) scale(1.2);
     text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2); }
