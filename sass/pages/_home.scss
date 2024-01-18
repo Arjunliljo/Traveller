@@ -3,3 +3,19 @@
     padding: 25rem 0;
     margin-top: -20vh;
 }
+.section-features{
+    padding: 18rem 0;
+    background-image: linear-gradient(
+        to right bottom,rgba($color-primery-light, 0.8), 
+        rgba($color-primery-dark, 0.8)), 
+        url('../img/hero.jpg');
+    background-size: cover;
+    transform: skewY(-7deg);
+    margin-top:20rem;
+
+    // selecting all first child
+    & > * {
+        transform: skewY(7deg);
+    }
+ 
+}

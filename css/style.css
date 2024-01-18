@@ -156,6 +156,30 @@ body {
   html {
     font-size: 5px; } }
 
+.feature-box {
+  text-align: center;
+  text-transform: uppercase;
+  background-color: rgba(255, 255, 255, 0.8);
+  font-size: 1.5rem;
+  padding: 2.5rem;
+  border-radius: 2px;
+  box-shadow: 0px 1rem 2rem rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  text-wrap: nowrap;
+  transition: transform 0.4s; }
+  .feature-box__icon {
+    font-size: 6rem;
+    padding-bottom: .5rem;
+    display: inline-block;
+    background: linear-gradient(to right, #5596f1, #0f3970);
+    background-clip: text;
+    color: transparent; }
+  .feature-box__text {
+    text-wrap: balance;
+    text-transform: none; }
+  .feature-box:hover {
+    transform: translateY(-1.5rem) scale(1.05); }
+
 .btn {
   backface-visibility: hidden; }
   .btn-white {
@@ -252,3 +276,12 @@ body {
   background-color: #f7f7f7;
   padding: 25rem 0;
   margin-top: -20vh; }
+
+.section-features {
+  padding: 18rem 0;
+  background-image: linear-gradient(to right bottom, rgba(85, 150, 241, 0.8), rgba(15, 57, 112, 0.8)), url("../img/hero.jpg");
+  background-size: cover;
+  transform: skewY(-7deg);
+  margin-top: 20rem; }
+  .section-features > * {
+    transform: skewY(7deg); }
