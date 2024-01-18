@@ -160,7 +160,8 @@ body {
   backface-visibility: hidden; }
   .btn-white {
     color: #777;
-    background-color: #fff; }
+    background-color: #fff;
+    font-size: 1.6rem; }
     .btn-white::after {
       background-color: #fff; }
   .btn--animated {
@@ -199,16 +200,53 @@ body {
       box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2); }
 
 .btn-learn-more:link, .btn-learn-more:visited {
-  background-color: #0f3970;
-  color: #f7f7f7;
+  font-size: 1.6rem;
+  color: #5596f1;
   text-decoration: none;
-  padding: 1rem 1rem;
   display: inline-block;
-  transition: all 0.5s; }
+  padding-bottom: 3px;
+  padding: .5rem;
+  border-bottom: 1px solid #5596f1;
+  transition: all 0.3s; }
 
 .btn-learn-more:hover {
-  transform: translateY(-1rem);
-  box-shadow: 0rem 1rem 1rem rgba(0, 0, 0, 0.5); }
+  transform: translateY(-0.5rem);
+  box-shadow: 0rem 1rem 1.4rem rgba(0, 0, 0, 0.25);
+  background-color: #0f3970;
+  color: #fff; }
+
+.btn-learn-more:active {
+  transform: translateY(0);
+  box-shadow: 0rem 0.5rem 1.8rem rgba(0, 0, 0, 0.2); }
+
+.composition {
+  position: relative; }
+  .composition__photo {
+    width: 55%;
+    box-shadow: 0rem 0.1rem 2rem rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    position: absolute;
+    transition: transform 0.2s, opacity 0.2s, outline 0.2s;
+    z-index: 10;
+    outline-offset: 2rem;
+    outline: 1.5rem solid rgba(0, 0, 0, 0);
+    backface-visibility: hidden; }
+    .composition__photo--p1 {
+      top: -2rem;
+      left: 0px; }
+    .composition__photo--p2 {
+      top: 2rem;
+      right: 0; }
+    .composition__photo--p3 {
+      top: 10rem;
+      left: 20%; }
+    .composition__photo:hover {
+      outline-color: #0f3970;
+      transform: scale(1.05) translateY(-0.5rem);
+      box-shadow: 0px 1.5rem 2.5rem rgba(0, 0, 0, 0.6);
+      z-index: 20; }
+  .composition:hover .composition__photo:not(:hover) {
+    transform: scale(0.95); }
 
 .section-about {
   background-color: #f7f7f7;
