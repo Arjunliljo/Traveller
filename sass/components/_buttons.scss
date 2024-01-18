@@ -55,7 +55,21 @@
             transform: translateY(-1px);
             box-shadow: 0px 5px 10px rgba($color-black, .2);
         }
-
      }   
+}
+.btn-learn-more{
+    &:link,
+    &:visited{ 
+        background-color: $color-primery-dark;
+        color:$color-gray-light-1;
+        text-decoration: none;
+        padding: 1rem 1rem;
+        display: inline-block;
+        transition: all 0.5s;
+    }
 
+    &:hover{
+        transform: translateY(-1rem);
+        box-shadow: 0rem 1rem 1rem rgba($color-black, .5);
+    }
 }
