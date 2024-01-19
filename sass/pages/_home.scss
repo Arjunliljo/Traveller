@@ -11,11 +11,16 @@
         url('../img/hero.jpg');
     background-size: cover;
     transform: skewY(-7deg);
-    margin-top:20rem;
+    margin-top: -20rem;
 
     // selecting all first child
     & > * {
         transform: skewY(7deg);
     }
  
+}
+.section-tours{
+ background-color: $color-gray-light-1;
+ padding: 25rem 0 50rem 0;
+ margin-top: -10rem;
 }

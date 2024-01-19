@@ -1,0 +1,59 @@
+.card{
+    // new property that allows to change the prespective of the rotation and this has to be in the parant element the transform
+    perspective: 150rem;
+    // to make work on mozilla firefox
+    -moz-perspective: 150rem;
+    position: relative;
+    height: 50rem;
+    &__side{
+        background-color: orangered;
+        padding: 3rem;
+        height: 50rem;
+        text-align: center;
+        text-transform: uppercase;
+        border-radius: 2px;
+        cursor: pointer;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        backface-visibility: hidden;
+        box-shadow: 0rem 1.5rem 4rem rgba($color-black, 0.15);
+    
+        transition: transform 1s ease;
+
+        &--front{
+            background-color: $color-white;
+        }
+        &--back{
+            background-color: rgb(47, 0, 255);
+            transform: rotateY(180deg);
+
+            &-1{
+                background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark);
+            }
+            &-2{
+                background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark);
+            }
+            &-3{
+                background-image: linear-gradient(to right bottom, $color-primery-light, $color-primery-dark);
+            }
+        }
+    }
+
+    &--text{
+        text-transform: none;
+    }
+
+    &:hover &__side{
+
+        &--front{
+            transform:rotateY(180deg);
+        }
+
+        &--back{
+            transform: rotateY(0deg);
+        }
+
+    }
+}
