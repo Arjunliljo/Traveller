@@ -4,6 +4,8 @@
     background-color: $color-white;
     box-shadow: 0px 3rem 6rem rgba($color-black, 0.1);
     padding: 6rem;
+    // because in shape we use transform and that is outside of the box so we increased padding left of the box so that we can contain all the contents in the box
+    padding-left: 9rem;
     font-size: $default-font-size;
 
     &__shape{
@@ -13,6 +15,6 @@
         background-color: red;
         shape-outside: circle(50% at 50% 50%);
         clip-path: circle(50% at 50% 50%);
-        margin-right: 5rem;
+        transform: translateX(-3rem);
     }
 }
