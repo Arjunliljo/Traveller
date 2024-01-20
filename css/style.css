@@ -390,11 +390,12 @@ body {
 .story {
   margin: 0 auto;
   width: 75%;
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.5);
   box-shadow: 0px 3rem 6rem rgba(0, 0, 0, 0.1);
   padding: 6rem;
   padding-left: 9rem;
   font-size: 1.6rem;
+  cursor: pointer;
   transform: skewX(-12deg); }
   .story > * {
     transform: skewX(12deg); }
@@ -402,13 +403,47 @@ body {
     height: 15rem;
     width: 15rem;
     float: left;
-    background-color: red;
     shape-outside: circle(50% at 50% 50%);
     clip-path: circle(50% at 50% 50%);
     transform: translateX(-3rem) skewX(12deg);
-    cursor: pointer; }
+    position: relative; }
   .story__image {
-    height: inherit; }
+    height: inherit;
+    transform: translateX(-4rem) scale(1.5);
+    transition: transform 1s; }
+  .story__caption {
+    text-transform: uppercase;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 20%);
+    color: white;
+    font-size: 1.7rem;
+    opacity: 0;
+    transition: transform 1s;
+    backface-visibility: hidden; }
+  .story:hover .story__caption {
+    opacity: 1;
+    transform: translate(-50%, -50%); }
+  .story:hover .story__image {
+    transform: translateX(-4rem) scale(1);
+    filter: blur(2px) brightness(80%); }
+
+.bg__video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  z-index: -1;
+  width: 100%;
+  overflow: hidden; }
+  .bg__video-content {
+    opacity: 0.2;
+    object-fit: cover;
+    width: 100%;
+    height: 100%; }
 
 .section-about {
   background-color: #f7f7f7;
@@ -430,4 +465,5 @@ body {
   margin-top: -10rem; }
 
 .section-stories {
-  background-color: #f7f7f7; }
+  padding: 10rem 0 10rem 0;
+  position: relative; }

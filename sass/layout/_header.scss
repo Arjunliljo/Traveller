@@ -8,6 +8,8 @@
     /* always try to fit inside the box entirely*/
     background-size: cover;
 
+    //background-blend-mode: multiply;
+
     /* top position of the image remains stable while bottom will be croped while adjustiing the screen size because of box-sizing  */
     background-position: top;
 
@@ -22,7 +24,6 @@
         left: 4rem;
     }
     &__logo{
-    
         height: 35px;
     }
 }
