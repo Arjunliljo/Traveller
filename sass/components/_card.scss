@@ -1,18 +1,19 @@
 .card{
+    //FUNCTIONALITY
     // new property that allows to change the prespective of the rotation and this has to be in the parant element the transform
     perspective: 150rem;
     // to make work on mozilla firefox
     -moz-perspective: 150rem;
     position: relative;
-    height: 50rem;
+    height: 52rem;
     &__side{
         background-color: orangered;
-        padding: 3rem;
-        height: 50rem;
+        height: 52rem;
         text-align: center;
         text-transform: uppercase;
-        border-radius: 2px;
+        border-radius: 5px;
         cursor: pointer;
+        overflow: hidden;
         position: absolute;
         top: 0px;
         left: 0px;
@@ -48,12 +49,72 @@
     &:hover &__side{
 
         &--front{
-            transform:rotateY(180deg);
+            transform:rotateY(-180deg);
         }
 
         &--back{
             transform: rotateY(0deg);
         }
 
+    }
+
+    // FRONT SIDE STYLEING
+    &__picture{
+        background-size: cover;
+        height: 25rem;
+        background-blend-mode: screen;
+
+        // to make work in all browser
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+
+        &--1{
+            background-image:linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark), url(../img/nat-5.jpg);
+        }
+        &--2{
+            background-image: url(../img/nat-4.jpg);
+        }
+        &--3{
+            background-image: url(../img/nat-3.jpg);
+        }
+    }
+    &__heading{
+        text-align: right;
+        text-transform: uppercase;
+        color: $color-white;
+        font-size: 2.6rem;
+        font-weight: 300;
+        position: absolute;
+        top: 14rem;
+        right: 1rem;
+        width: 60%;
+       // line-height: 3rem;
+    }
+    &__heading--span{
+        padding: 1rem ;
+        -webkit-box-decoration-break: clone;
+        box-decoration-break: clone;
+        
+        &-1{
+            background-image: linear-gradient(to right, rgba($color-secondary-light, 0.8), rgba($color-secondary-dark, 0.8));
+        }
+    }
+    &__details{
+        width: 60%;
+        margin: 0 auto;
+        font-size: 1.2rem;
+        padding: 3rem;
+        ul{
+            text-decoration: none;
+            list-style: none;
+            font-weight: 700;
+            li{
+                padding: .9rem;
+
+                &:not(:last-child){
+                    border-bottom: 1px solid #eee;
+                }
+            }
+        }
     }
 }

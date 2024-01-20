@@ -279,15 +279,15 @@ body {
   perspective: 150rem;
   -moz-perspective: 150rem;
   position: relative;
-  height: 50rem; }
+  height: 52rem; }
   .card__side {
     background-color: orangered;
-    padding: 3rem;
-    height: 50rem;
+    height: 52rem;
     text-align: center;
     text-transform: uppercase;
-    border-radius: 2px;
+    border-radius: 5px;
     cursor: pointer;
+    overflow: hidden;
     position: absolute;
     top: 0px;
     left: 0px;
@@ -309,9 +309,50 @@ body {
   .card--text {
     text-transform: none; }
   .card:hover .card__side--front {
-    transform: rotateY(180deg); }
+    transform: rotateY(-180deg); }
   .card:hover .card__side--back {
     transform: rotateY(0deg); }
+  .card__picture {
+    background-size: cover;
+    height: 25rem;
+    background-blend-mode: screen;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); }
+    .card__picture--1 {
+      background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url(../img/nat-5.jpg); }
+    .card__picture--2 {
+      background-image: url(../img/nat-4.jpg); }
+    .card__picture--3 {
+      background-image: url(../img/nat-3.jpg); }
+  .card__heading {
+    text-align: right;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 2.6rem;
+    font-weight: 300;
+    position: absolute;
+    top: 14rem;
+    right: 1rem;
+    width: 60%; }
+  .card__heading--span {
+    padding: 1rem;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone; }
+    .card__heading--span-1 {
+      background-image: linear-gradient(to right, rgba(255, 185, 0, 0.8), rgba(255, 119, 48, 0.8)); }
+  .card__details {
+    width: 60%;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    padding: 3rem; }
+    .card__details ul {
+      text-decoration: none;
+      list-style: none;
+      font-weight: 700; }
+      .card__details ul li {
+        padding: .9rem; }
+        .card__details ul li:not(:last-child) {
+          border-bottom: 1px solid #eee; }
 
 .section-about {
   background-color: #f7f7f7;
