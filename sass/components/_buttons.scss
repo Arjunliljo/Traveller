@@ -4,11 +4,20 @@
         color: $color-gray;
         background-color: $color-white ;
         font-size: $default-font-size;
-
         &::after{
             background-color: $color-white;
         }
     }
+
+    &-blue{
+        color: $color-white;
+        background-color: $color-primery-dark;
+        font-size: $default-font-size;
+        &::after{
+            background-color: $color-primery-dark;
+        }
+    }
+
     &--animated{
         animation: btnMoveUp 1s ease-out 0.75s;
         /* animation will be applied to the button even before animation start due to delay */
@@ -79,6 +88,6 @@
     }
     &:active{
         transform: translateY(0);
-        box-shadow: 0rem .5rem 1.8rem rgba($color-black, .2);
+        box-shadow: 0rem .5rem 1.8rem rgba($color-black, .1);
     }
 }

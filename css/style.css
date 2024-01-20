@@ -191,6 +191,12 @@ body {
     font-size: 1.6rem; }
     .btn-white::after {
       background-color: #fff; }
+  .btn-blue {
+    color: #fff;
+    background-color: #5643fa;
+    font-size: 1.6rem; }
+    .btn-blue::after {
+      background-color: #5643fa; }
   .btn--animated {
     animation: btnMoveUp 1s ease-out 0.75s;
     /* animation will be applied to the button even before animation start due to delay */
@@ -244,7 +250,7 @@ body {
 
 .btn-learn-more:active {
   transform: translateY(0);
-  box-shadow: 0rem 0.5rem 1.8rem rgba(0, 0, 0, 0.2); }
+  box-shadow: 0rem 0.5rem 1.8rem rgba(0, 0, 0, 0.1); }
 
 .composition {
   position: relative; }
@@ -281,7 +287,6 @@ body {
   position: relative;
   height: 52rem; }
   .card__side {
-    background-color: orangered;
     height: 52rem;
     text-align: center;
     text-transform: uppercase;
@@ -299,7 +304,8 @@ body {
       background-color: #fff; }
     .card__side--back {
       background-color: #2f00ff;
-      transform: rotateY(180deg); }
+      transform: rotateY(180deg);
+      margin: 0 auto; }
       .card__side--back-1 {
         background-image: linear-gradient(to right bottom, #ffb900, #ff7730); }
       .card__side--back-2 {
@@ -321,9 +327,11 @@ body {
     .card__picture--1 {
       background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url(../img/nat-5.jpg); }
     .card__picture--2 {
-      background-image: url(../img/nat-4.jpg); }
+      background-image: url(../img/nat-4.jpg);
+      background-image: linear-gradient(to right bottom, #7edf6f, #28b485), url(../img/nat-6.jpg); }
     .card__picture--3 {
-      background-image: url(../img/nat-3.jpg); }
+      background-image: url(../img/nat-3.jpg);
+      background-image: linear-gradient(to right bottom, #2998ff, #5643fa), url(../img/nat-7.jpg); }
   .card__heading {
     text-align: right;
     text-transform: uppercase;
@@ -340,6 +348,10 @@ body {
     box-decoration-break: clone; }
     .card__heading--span-1 {
       background-image: linear-gradient(to right, rgba(255, 185, 0, 0.8), rgba(255, 119, 48, 0.8)); }
+    .card__heading--span-2 {
+      background-image: linear-gradient(to right, rgba(126, 223, 111, 0.8), rgba(40, 180, 133, 0.8)); }
+    .card__heading--span-3 {
+      background-image: linear-gradient(to right, rgba(41, 152, 255, 0.8), rgba(86, 67, 250, 0.8)); }
   .card__details {
     width: 60%;
     margin: 0 auto;
@@ -353,6 +365,43 @@ body {
         padding: .9rem; }
         .card__details ul li:not(:last-child) {
           border-bottom: 1px solid #eee; }
+  .card__cta {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; }
+  .card__price-box {
+    text-align: center;
+    color: #fff; }
+  .card__price-only {
+    font-size: 1.4rem;
+    font-weight: 100;
+    text-transform: uppercase; }
+  .card__price-value {
+    font-size: 6rem;
+    margin-bottom: 8rem; }
+
+.story {
+  margin: 0 auto;
+  width: 75%;
+  background-color: #fff;
+  box-shadow: 0px 3rem 6rem rgba(0, 0, 0, 0.1);
+  padding: 6rem;
+  font-size: 1.6rem; }
+  .story__shape {
+    height: 15rem;
+    width: 15rem;
+    float: left;
+    background-color: red;
+    shape-outside: circle(50% at 50% 50%);
+    clip-path: circle(50% at 50% 50%);
+    margin-right: 5rem; }
 
 .section-about {
   background-color: #f7f7f7;
@@ -370,5 +419,8 @@ body {
 
 .section-tours {
   background-color: #f7f7f7;
-  padding: 25rem 0 50rem 0;
+  padding: 25rem 0 15rem 0;
   margin-top: -10rem; }
+
+.section-stories {
+  background-color: #f7f7f7; }
