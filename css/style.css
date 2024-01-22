@@ -81,7 +81,7 @@ body {
   font-weight: 700;
   display: inline-block;
   text-transform: uppercase;
-  background: linear-gradient(to right, #2998ff, #5643fa);
+  background: linear-gradient(to right, #7edf6f, #28b485);
   background-clip: text;
   color: transparent;
   transition: all .5s;
@@ -114,7 +114,7 @@ body {
 
 .header {
   height: 95vh;
-  background-image: linear-gradient(to right bottom, rgba(41, 152, 255, 0.8), rgba(86, 67, 250, 0.8)), url("../img/hero.jpg");
+  background-image: linear-gradient(to right bottom, rgba(126, 223, 111, 0.8), rgba(40, 180, 133, 0.8)), url("../img/hero.jpg");
   /* always try to fit inside the box entirely*/
   background-size: cover;
   /* top position of the image remains stable while bottom will be croped while adjustiing the screen size because of box-sizing  */
@@ -174,7 +174,7 @@ body {
     font-size: 6rem;
     padding-bottom: .5rem;
     display: inline-block;
-    background: linear-gradient(to right, #2998ff, #5643fa);
+    background: linear-gradient(to right, #7edf6f, #28b485);
     background-clip: text;
     color: transparent; }
   .feature-box__text {
@@ -193,10 +193,10 @@ body {
       background-color: #fff; }
   .btn-blue {
     color: #fff;
-    background-color: #5643fa;
+    background-color: #28b485;
     font-size: 1.6rem; }
     .btn-blue::after {
-      background-color: #5643fa; }
+      background-color: #28b485; }
   .btn--animated {
     animation: btnMoveUp 1s ease-out 0.75s;
     /* animation will be applied to the button even before animation start due to delay */
@@ -234,18 +234,18 @@ body {
 
 .btn-learn-more:link, .btn-learn-more:visited {
   font-size: 1.6rem;
-  color: #2998ff;
+  color: #28b485;
   text-decoration: none;
   display: inline-block;
   padding-bottom: 3px;
   padding: .5rem;
-  border-bottom: 1px solid #2998ff;
+  border-bottom: 1px solid #7edf6f;
   transition: all 0.3s; }
 
 .btn-learn-more:hover {
   transform: translateY(-0.5rem);
   box-shadow: 0rem 1rem 1.4rem rgba(0, 0, 0, 0.25);
-  background-color: #5643fa;
+  background-color: #28b485;
   color: #fff; }
 
 .btn-learn-more:active {
@@ -274,7 +274,7 @@ body {
       top: 10rem;
       left: 20%; }
     .composition__photo:hover {
-      outline-color: #5643fa;
+      outline-color: #28b485;
       transform: scale(1.05) translateY(-0.5rem);
       box-shadow: 0px 1.5rem 2.5rem rgba(0, 0, 0, 0.6);
       z-index: 20; }
@@ -309,9 +309,9 @@ body {
       .card__side--back-1 {
         background-image: linear-gradient(to right bottom, #ffb900, #ff7730); }
       .card__side--back-2 {
-        background-image: linear-gradient(to right bottom, #7edf6f, #28b485); }
-      .card__side--back-3 {
         background-image: linear-gradient(to right bottom, #2998ff, #5643fa); }
+      .card__side--back-3 {
+        background-image: linear-gradient(to right bottom, #7edf6f, #28b485); }
   .card--text {
     text-transform: none; }
   .card:hover .card__side--front {
@@ -328,10 +328,10 @@ body {
       background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url(../img/nat-5.jpg); }
     .card__picture--2 {
       background-image: url(../img/nat-4.jpg);
-      background-image: linear-gradient(to right bottom, #7edf6f, #28b485), url(../img/nat-6.jpg); }
+      background-image: linear-gradient(to right bottom, #2998ff, #5643fa), url(../img/nat-6.jpg); }
     .card__picture--3 {
       background-image: url(../img/nat-3.jpg);
-      background-image: linear-gradient(to right bottom, #2998ff, #5643fa), url(../img/nat-7.jpg); }
+      background-image: linear-gradient(to right bottom, #7edf6f, #28b485), url(../img/nat-7.jpg); }
   .card__heading {
     text-align: right;
     text-transform: uppercase;
@@ -349,9 +349,9 @@ body {
     .card__heading--span-1 {
       background-image: linear-gradient(to right, rgba(255, 185, 0, 0.8), rgba(255, 119, 48, 0.8)); }
     .card__heading--span-2 {
-      background-image: linear-gradient(to right, rgba(126, 223, 111, 0.8), rgba(40, 180, 133, 0.8)); }
-    .card__heading--span-3 {
       background-image: linear-gradient(to right, rgba(41, 152, 255, 0.8), rgba(86, 67, 250, 0.8)); }
+    .card__heading--span-3 {
+      background-image: linear-gradient(to right, rgba(126, 223, 111, 0.8), rgba(40, 180, 133, 0.8)); }
   .card__details {
     width: 60%;
     margin: 0 auto;
@@ -452,7 +452,7 @@ body {
 
 .section-features {
   padding: 18rem 0;
-  background-image: linear-gradient(to right bottom, rgba(41, 152, 255, 0.8), rgba(86, 67, 250, 0.8)), url("../img/hero.jpg");
+  background-image: linear-gradient(to right bottom, rgba(126, 223, 111, 0.8), rgba(40, 180, 133, 0.8)), url("../img/hero.jpg");
   background-size: cover;
   transform: skewY(-7deg);
   margin-top: -20rem; }
