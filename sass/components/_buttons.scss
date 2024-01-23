@@ -1,5 +1,7 @@
 .btn{
   backface-visibility: hidden;
+  cursor: pointer;
+  border: none;
     &-white{
         color: $color-gray;
         background-color: $color-white ;
@@ -23,7 +25,7 @@
         /* animation will be applied to the button even before animation start due to delay */
         animation-fill-mode: backwards;
     }
-
+    &,
     &:link,
     &:visited{
         text-decoration: none;

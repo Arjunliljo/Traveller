@@ -1,8 +1,8 @@
 .form{
-
-    &__group:not(:last-child){
+  
+    &__group:not(:last-child){  
+        margin-bottom: 2rem;
         
-        margin-bottom: 3rem;
     }
 
     &__input{
@@ -48,4 +48,48 @@
         visibility: hidden;
         transform: translateY(-4rem);
      }
+
+     &__radio-group{
+        display: inline-block;
+        width: 30%;
+     }
+     &__radio-label{
+        position: relative;
+        cursor: pointer;
+        font-size: $default-font-size;
+        padding-left: 4rem;
+       }
+     &__radio-button{
+        width: 3rem;
+        height: 3rem;
+        border-radius: 50%;
+        border: .4rem solid $color-primery-dark;
+        display: inline-block;
+        position: absolute;
+        top: -.7rem;
+        left: 0;
+        
+        &::after{
+            content: "";
+            display: block;
+            height: 1.3rem;
+            width: 1.3rem;
+            background-color: $color-primery-dark;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            opacity: 0;
+            transition: opacity .3s;
+        }
+
+     }
+     &__radio-input{
+        opacity: 0;
+     }
+     &__radio-input:checked + &__radio-label &__radio-button::after{
+       opacity: 1;
+     }
+
 }
