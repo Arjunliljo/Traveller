@@ -106,6 +106,9 @@ body {
 .u-margin-bottom-big {
   margin-bottom: 8rem; }
 
+.u-margin-bottom-mid {
+  margin-bottom: 4rem; }
+
 .u-margin-top-big {
   margin-top: 12rem; }
 
@@ -445,6 +448,42 @@ body {
     width: 100%;
     height: 100%; }
 
+.form__group:not(:last-child) {
+  margin-bottom: 3rem; }
+
+.form__input {
+  font-size: 1.5rem;
+  padding: 1.5rem 2rem;
+  font-family: inherit;
+  color: inherit;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+  border-bottom: 3px solid transparent;
+  display: block;
+  width: 90%;
+  transition: all .3s; }
+  .form__input:focus {
+    outline: none;
+    box-shadow: 0px 1rem 2rem rgba(0, 0, 0, 0.1);
+    border-bottom: 3px solid #28b485; }
+    .form__input:focus:invalid {
+      border-bottom: 3px solid #ff7730; }
+  .form__input::-webkit-input-placeholder {
+    color: #999; }
+
+.form__label {
+  margin-left: 2rem;
+  margin-top: 1rem;
+  display: block;
+  font-size: 1.2rem;
+  font-weight: 700;
+  transition: all .3s; }
+
+.form__input:placeholder-shown + .form__label {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-4rem); }
+
 .section-about {
   background-color: #f7f7f7;
   padding: 25rem 0;
@@ -467,3 +506,15 @@ body {
 .section-stories {
   padding: 10rem 0 10rem 0;
   position: relative; }
+
+.section-book {
+  padding: 15rem 15rem;
+  background-image: linear-gradient(to right, #7edf6f, #28b485); }
+
+.book {
+  height: 50rem;
+  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(../img/nat-10.jpg);
+  background-size: 100%; }
+  .book__form {
+    width: 50%;
+    padding: 6rem; }
