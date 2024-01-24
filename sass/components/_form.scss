@@ -1,7 +1,7 @@
 .form{
   
     &__group:not(:last-child){  
-        margin-bottom: 2rem;
+        margin-bottom: rem;
         
     }
 
@@ -19,14 +19,12 @@
         &:focus{
             outline: none;
             box-shadow: 0px 1rem 2rem rgba(black, 0.1);
-            border-bottom: 3px solid $color-primery-dark;
+            border-bottom: 3px solid $color-tertiary-light;
 
             &:invalid{
                 border-bottom: 3px solid $color-secondary-dark;
             }
         }
-
-
         &::-webkit-input-placeholder{
             color:$color-gray-2;
         }

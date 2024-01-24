@@ -454,7 +454,7 @@ body {
     height: 100%; }
 
 .form__group:not(:last-child) {
-  margin-bottom: 2rem; }
+  margin-bottom: rem; }
 
 .form__input {
   font-size: 1.5rem;
@@ -470,7 +470,7 @@ body {
   .form__input:focus {
     outline: none;
     box-shadow: 0px 1rem 2rem rgba(0, 0, 0, 0.1);
-    border-bottom: 3px solid #5643fa; }
+    border-bottom: 3px solid #7edf6f; }
     .form__input:focus:invalid {
       border-bottom: 3px solid #ff7730; }
   .form__input::-webkit-input-placeholder {
