@@ -40,7 +40,7 @@ body {
   box-sizing: border-box; }
 
 body {
-  font-family: "Noto", sans-serif;
+  font-family: "Nato", sans-serif;
   line-height: 1.7;
   font-size: 1.6rem;
   font-weight: 400;
@@ -424,9 +424,11 @@ body {
     color: #fff; }
   .card__price-only {
     font-size: 1.4rem;
-    font-weight: 100;
+    font-weight: 300;
     text-transform: uppercase; }
   .card__price-value {
+    font-family: "Roboto";
+    font-weight: 300;
     font-size: 6rem;
     margin-bottom: 8rem; }
 

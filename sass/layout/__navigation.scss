@@ -1,0 +1,57 @@
+.navigation{
+ 
+    &__checkbox{
+        visibility: hidden;
+        display: none;
+    }
+    &__btn{
+        cursor: pointer;
+        position: fixed;
+        height: 7rem;
+        width: 7rem;
+        top: 6rem;
+        right: 6rem;
+        background-color: $color-gray-light-1;
+        border: 1px solid black;
+        border-radius: 50%;
+        text-align: center;
+        z-index: 200;
+    }
+    &__background{
+        background-image: radial-gradient( $color-primery-light, $color-primery-dark);
+        height: 6rem;
+        width: 6rem;
+        border-radius: 50%;
+        position: fixed;
+        top: 6.5rem;
+        right: 6.5rem;
+        z-index: 100;
+     //   transform: scale(50);
+    }
+
+    &__nav{
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 150;
+        height: 100vh;
+        // we don't need to specify width because it is already 100% ie block element
+        width: 100%;
+    }
+    &__list{
+        @include centerPos;
+        text-align: center;
+        list-style: none;
+    }
+    &__item{
+
+    }
+    &__link{
+        font-family: "Roboto", "Nato" ;
+        font-size: 3rem;
+        font-weight: 300;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: white;
+    }
+}
