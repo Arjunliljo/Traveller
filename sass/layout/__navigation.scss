@@ -18,7 +18,7 @@
         z-index: 200;
     }
     &__background{
-        background-image: radial-gradient( $color-primery-light, $color-primery-dark);
+        background-image: radial-gradient( $color-radial-light,rgb(7, 7, 124),  $color-radial-dark);
         height: 6rem;
         width: 6rem;
         border-radius: 50%;
@@ -26,7 +26,7 @@
         top: 6.5rem;
         right: 6.5rem;
         z-index: 100;
-     //   transform: scale(50);
+        transform: scale(50);
     }
 
     &__nav{
@@ -44,14 +44,29 @@
         list-style: none;
     }
     &__item{
-
+        margin: 1rem;
     }
     &__link{
-        font-family: "Roboto", "Nato" ;
-        font-size: 3rem;
-        font-weight: 300;
-        text-decoration: none;
-        text-transform: uppercase;
-        color: white;
+        &:link,
+        &:visited{
+            display: inline-block;
+            font-family: "Roboto", "Nato" ;
+            letter-spacing: 2px;
+            font-size: 3rem;
+            font-weight: 300;
+            text-decoration: none;
+            text-transform: uppercase;
+            color: white;
+            padding: 1rem;
+            background-image: linear-gradient(120deg, transparent 0%, transparent 50%, white 50%);
+            background-size: 235%;
+            transition: all .5s;    
+        }
+        &:hover,
+        &:active{
+            background-position: 100%;
+            color: $color-primery-dark;
+            transform: translateX(1rem);
+        }
     }
 }
