@@ -279,15 +279,15 @@ body {
   transform: scale(50); }
 
 .navigation__checkbox:checked ~ .navigation__btn .navigation__icon::after {
-  transform: rotate(30deg) translateY(-1px);
-  width: 80%; }
+  transform: rotate(45deg);
+  top: 1rem; }
 
 .navigation__checkbox:checked ~ .navigation__btn .navigation__icon::before {
-  transform: rotate(-30deg) translateY(1px);
-  width: 80%; }
+  transform: rotate(-45deg);
+  top: -1rem; }
 
 .navigation__checkbox:checked ~ .navigation__btn .navigation__icon {
-  transform: translateZ(5px); }
+  background-color: transparent; }
 
 .navigation__icon {
   position: relative; }

@@ -83,7 +83,7 @@
     &__checkbox:checked ~ &__background{
         transform: scale(50);
     }
-    @include navigationIconArrow;
+    @include navigationIconCross;
 
     // ICON
     &__icon{

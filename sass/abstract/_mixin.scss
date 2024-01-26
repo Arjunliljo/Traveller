@@ -42,16 +42,18 @@
         transform:translateZ(5px) ;
     }
 }
+
 @mixin navigationIconCross{
     &__checkbox:checked ~ &__btn &__icon::after{
-        transform: rotate(30deg) translateY(-1px);
-        width: 80%;
+        transform: rotate(45deg);
+        top: 1rem;
+
     }
     &__checkbox:checked ~ &__btn &__icon::before{
-        transform: rotate(-30deg) translateY(1px) ;
-        width: 80%;
+        transform: rotate(-45deg);
+        top: -1rem;
     }
     &__checkbox:checked ~ &__btn &__icon{
-        transform:translateZ(5px) ;
+        background-color: transparent;
     }
 }
