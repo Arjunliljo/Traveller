@@ -212,10 +212,12 @@ body {
   top: 6rem;
   right: 6rem;
   background-color: #f7f7f7;
-  border: 1px solid black;
   border-radius: 50%;
   text-align: center;
-  z-index: 200; }
+  z-index: 200;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
 
 .navigation__background {
   background-image: radial-gradient(#00a2ff, #07077c, #0c496d);
@@ -226,7 +228,7 @@ body {
   top: 6.5rem;
   right: 6.5rem;
   z-index: 100;
-  transform: scale(50); }
+  transition: transform .5s; }
 
 .navigation__nav {
   position: fixed;
@@ -234,7 +236,9 @@ body {
   right: 0;
   z-index: 150;
   height: 100vh;
-  width: 100%; }
+  width: 0;
+  opacity: 0;
+  transition: all .2s; }
 
 .navigation__list {
   position: absolute;
@@ -265,6 +269,48 @@ body {
   background-position: 100%;
   color: #5643fa;
   transform: translateX(1rem); }
+
+.navigation__checkbox:checked ~ .navigation__nav {
+  visibility: visible;
+  width: 100%;
+  opacity: 1; }
+
+.navigation__checkbox:checked ~ .navigation__background {
+  transform: scale(50); }
+
+.navigation__checkbox:checked ~ .navigation__btn .navigation__icon::after {
+  transform: rotate(30deg) translateY(-0.8px);
+  width: 80%; }
+
+.navigation__checkbox:checked ~ .navigation__btn .navigation__icon::before {
+  transform: rotate(-30deg) translateY(0.8px);
+  width: 80%; }
+
+.navigation__checkbox:checked ~ .navigation__btn .navigation__icon {
+  transform: translateZ(5px); }
+
+.navigation__icon {
+  position: relative; }
+  .navigation__icon, .navigation__icon::after, .navigation__icon::before {
+    display: inline-block;
+    background-color: #3b3b3b;
+    width: 3rem;
+    height: 2px;
+    transition: all .3s; }
+  .navigation__icon::after, .navigation__icon::before {
+    content: "";
+    position: absolute;
+    left: 0; }
+  .navigation__icon::after {
+    top: .8rem; }
+  .navigation__icon::before {
+    top: -.8rem; }
+
+.navigation__btn:hover .navigation__icon::after {
+  transform: translateY(0.2rem); }
+
+.navigation__btn:hover .navigation__icon::before {
+  transform: translateY(-0.2rem); }
 
 .feature-box {
   text-align: center;
