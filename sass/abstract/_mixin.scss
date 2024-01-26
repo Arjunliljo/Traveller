@@ -29,13 +29,26 @@
     }
 }
 
-@mixin navigationIcon{
+@mixin navigationIconArrow{
     &__checkbox:checked ~ &__btn &__icon::after{
-        transform: rotate(30deg) translateY(-.8px);
+        transform: rotate(30deg) translateY(-1px);
         width: 80%;
     }
     &__checkbox:checked ~ &__btn &__icon::before{
-        transform: rotate(-30deg) translateY(.8px) ;
+        transform: rotate(-30deg) translateY(1px) ;
+        width: 80%;
+    }
+    &__checkbox:checked ~ &__btn &__icon{
+        transform:translateZ(5px) ;
+    }
+}
+@mixin navigationIconCross{
+    &__checkbox:checked ~ &__btn &__icon::after{
+        transform: rotate(30deg) translateY(-1px);
+        width: 80%;
+    }
+    &__checkbox:checked ~ &__btn &__icon::before{
+        transform: rotate(-30deg) translateY(1px) ;
         width: 80%;
     }
     &__checkbox:checked ~ &__btn &__icon{

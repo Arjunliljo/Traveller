@@ -279,11 +279,11 @@ body {
   transform: scale(50); }
 
 .navigation__checkbox:checked ~ .navigation__btn .navigation__icon::after {
-  transform: rotate(30deg) translateY(-0.8px);
+  transform: rotate(30deg) translateY(-1px);
   width: 80%; }
 
 .navigation__checkbox:checked ~ .navigation__btn .navigation__icon::before {
-  transform: rotate(-30deg) translateY(0.8px);
+  transform: rotate(-30deg) translateY(1px);
   width: 80%; }
 
 .navigation__checkbox:checked ~ .navigation__btn .navigation__icon {
