@@ -12,7 +12,7 @@
     align-items: center;
     justify-content: center;
 
-    transition: all .5s;
+    transition: all .3s;
 
 
     &__content{
@@ -24,7 +24,7 @@
         opacity: 0;
         transform: scale(.3);
 
-        transition: all .5s;
+        transition: all .5s .2s;
     }
 
     &__left{
