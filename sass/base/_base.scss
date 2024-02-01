@@ -18,10 +18,9 @@ html{
         font-size: 5px;
     }
     @include respond(bigDesk){
-        font-size:12px; // 1rem = 12px, 12 / 16 = 75%
+        font-size:12px;
     }
 }
 body{
-    box-sizing: border-box;
     background-color: red;
 }

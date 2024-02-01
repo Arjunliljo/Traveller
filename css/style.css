@@ -63,7 +63,6 @@ html {
       font-size: 12px; } }
 
 body {
-  box-sizing: border-box;
   background-color: red; }
 
 body {
@@ -164,7 +163,7 @@ body {
     top: 4rem;
     left: 4rem; }
   .header__logo {
-    height: 35px; }
+    height: 3.5rem; }
 
 .row {
   max-width: 114rem;
