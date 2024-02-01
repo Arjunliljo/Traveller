@@ -446,6 +446,9 @@ body {
     text-transform: none; }
   .feature-box:hover {
     transform: translateY(-1.5rem) scale(1.05); }
+    @media (max-width: 900px) {
+      .feature-box:hover {
+        transform: translateY(0rem) scale(1); } }
 
 .btn {
   backface-visibility: hidden;

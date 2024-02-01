@@ -24,6 +24,10 @@
 
     &:hover{
         transform: translateY(-1.5rem) scale(1.05);
+
+        @include respond(tabPort){
+            transform: translateY(0rem) scale(1);
+        }
     }
 }
 
