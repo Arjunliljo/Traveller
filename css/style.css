@@ -99,7 +99,8 @@ body {
         animation-iteration-count: 5; */ }
     @media (max-width: 600px) {
       .primery-title--main {
-        letter-spacing: 1rem; } }
+        letter-spacing: 1rem;
+        font-size: 8rem; } }
   .primery-title--sub {
     font-size: 2rem;
     display: block;
