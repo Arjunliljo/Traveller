@@ -97,6 +97,10 @@ body {
     animation-timing-function: ease-out;
     /* animation-delay: 1s;
         animation-iteration-count: 5; */ }
+    @media (max-width: 600px) {
+      .primery-title--main {
+        letter-spacing: 1.5rem;
+        font-size: 7rem; } }
   .primery-title--sub {
     font-size: 2rem;
     display: block;
@@ -104,6 +108,10 @@ body {
     animation: moveRightoLeft 1.5s ease-out;
     /* adjustment */
     margin-bottom: 5rem; }
+    @media (max-width: 600px) {
+      .primery-title--sub {
+        letter-spacing: .8rem;
+        font-size: 3rem; } }
 
 .heading-secondary {
   font-size: 3.5rem;

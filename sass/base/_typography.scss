@@ -16,6 +16,7 @@ body{
     text-align: center;
     /* to fix shaking while animation in sub contents */
     backface-visibility: hidden;
+
 }
 
 .primery-title{
@@ -31,6 +32,11 @@ body{
         animation-timing-function: ease-out;
         /* animation-delay: 1s;
         animation-iteration-count: 5; */
+
+        @include respond(phone){
+            letter-spacing: 1.5rem;
+            font-size: 7rem;
+        }
     }
     &--sub{
         font-size: 2rem;
@@ -39,6 +45,11 @@ body{
         animation: moveRightoLeft 1.5s ease-out;
         /* adjustment */
         margin-bottom: 5rem;
+
+        @include respond(phone){
+            letter-spacing: .8rem;
+            font-size: 3rem;
+        }
     }
 }
 .heading-secondary{
