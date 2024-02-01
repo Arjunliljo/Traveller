@@ -9,13 +9,13 @@ html{
     font-size: 10px;
 
     @include respond(tabLand){
-        font-size: 9px; //1rem = 9px, 9 / 16 = 52.25%
+        font-size: 9px; 
     }
     @include respond(tabPort){
-        font-size: 6px; // 1rem = 8px, 8 / 16 = 50%.
+        font-size: 6px;
     }
     @include respond(phone){
-        font-size: 5px; // 1rem = 8px, 8 / 16 = 50%.
+        font-size: 5px;
     }
     @include respond(bigDesk){
         font-size:12px; // 1rem = 12px, 12 / 16 = 75%
@@ -23,4 +23,5 @@ html{
 }
 body{
     box-sizing: border-box;
+    background-color: red;
 }
