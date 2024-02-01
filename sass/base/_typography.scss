@@ -80,9 +80,6 @@ body{
     @include respond(tabPort){
         font-size: 2.5rem;
     }
-    @include respond(phone){
-        font-size: 2rem;
-    }
 }
 .heading-thertiary{
     font-size: $default-font-size;
