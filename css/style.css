@@ -112,7 +112,10 @@ body {
     @media (max-width: 600px) {
       .primery-title--sub {
         letter-spacing: .5rem;
-        font-size: 4rem; } }
+        font-size: 4rem;
+        font-family: "Roboto", sans-serif;
+        font-weight: 100;
+        font-style: normal; } }
 
 .heading-secondary {
   font-size: 3.5rem;

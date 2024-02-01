@@ -51,6 +51,9 @@ body{
         @include respond(phone){
             letter-spacing: .5rem;
             font-size: 4rem;
+            font-family: "Roboto", sans-serif;
+            font-weight: 100;
+            font-style: normal;
         }
     }
 }
