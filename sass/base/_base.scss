@@ -12,7 +12,7 @@ html{
         font-size: 9px; //1rem = 9px, 9 / 16 = 52.25%
     }
     @include respond(tabPort){
-        font-size: 8px; // 1rem = 8px, 8 / 16 = 50%.
+        font-size: 6px; // 1rem = 8px, 8 / 16 = 50%.
     }
     @include respond(phone){
         font-size: 5px; // 1rem = 8px, 8 / 16 = 50%.
