@@ -63,15 +63,18 @@ html {
       font-size: 12px; } }
 
 body {
+  padding: 3rem;
+  box-sizing: border-box; }
+  @media (max-width: 900px) {
+    body {
+      padding: 0px; } }
+
+body {
   font-family: "Nato", sans-serif;
   line-height: 1.7;
   font-size: 1.6rem;
   font-weight: 400;
-  color: #777;
-  padding: 3rem; }
-  @media (max-width: 900px) {
-    body {
-      padding: 0px; } }
+  color: #777; }
 
 .text-box {
   position: absolute;
