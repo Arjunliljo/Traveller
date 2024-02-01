@@ -131,6 +131,12 @@ body {
   .heading-secondary:hover {
     transform: skewY(3deg) skewX(5deg) scale(1.2);
     text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2); }
+  @media (max-width: 900px) {
+    .heading-secondary {
+      font-size: 2.5rem; } }
+  @media (max-width: 600px) {
+    .heading-secondary {
+      font-size: 2rem; } }
 
 .heading-thertiary {
   font-size: 1.6rem;
