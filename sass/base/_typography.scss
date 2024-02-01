@@ -45,6 +45,8 @@ body{
         /* adjustment */
         margin-bottom: 5rem;
 
+        text-wrap: nowrap;
+
         @include respond(phone){
             letter-spacing: .5rem;
         }
