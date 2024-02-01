@@ -193,9 +193,16 @@ body {
     float: left; }
     .row [class^="col-"]:not(:last-child) {
       margin-right: 6rem; }
+      @media (max-width: 900px) {
+        .row [class^="col-"]:not(:last-child) {
+          margin-right: 0px; } }
     @media (max-width: 900px) {
       .row [class^="col-"] {
-        width: 100% !important; } }
+        width: 100% !important;
+        margin-bottom: 5rem; } }
+  @media (max-width: 900px) {
+    .row {
+      max-width: 50rem; } }
   .row::after {
     content: "";
     display: table;

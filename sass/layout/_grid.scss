@@ -11,11 +11,20 @@
 
         &:not(:last-child){
             margin-right: $grid-gutter-horizontal;
+
+            @include respond(tabPort){
+                margin-right: 0px;
+            }
         }
 
         @include respond(tabPort){
             width: 100% !important;
+            margin-bottom: 5rem ;
         }
+    }
+
+    @include respond(tabPort){
+        max-width: 50rem;
     }
 
     @include clearfix;
