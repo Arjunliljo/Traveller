@@ -111,10 +111,10 @@ body {
     text-wrap: nowrap; }
     @media (max-width: 600px) {
       .primery-title--sub {
-        letter-spacing: .5rem;
+        letter-spacing: 1rem;
         font-size: 4rem;
         font-family: "Roboto", sans-serif;
-        font-weight: 100;
+        font-weight: 300;
         font-style: normal;
         margin-top: -3rem; } }
 

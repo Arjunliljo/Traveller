@@ -49,10 +49,10 @@ body{
         text-wrap: nowrap;
 
         @include respond(phone){
-            letter-spacing: .5rem;
+            letter-spacing: 1rem;
             font-size: 4rem;
             font-family: "Roboto", sans-serif;
-            font-weight: 100;
+            font-weight: 300;
             font-style: normal;
             margin-top: -3rem;
         }
