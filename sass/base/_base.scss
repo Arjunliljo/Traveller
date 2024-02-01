@@ -6,19 +6,19 @@
     box-sizing: border-box;
 }
 html{
-    font-size: 62.5%;
+    font-size: 10px;
 
-    @include respond(phone){
-        font-size: 50%;
+    @include respond(tabLand){
+        font-size: 9px; //1rem = 9px, 9 / 16 = 52.25%
     }
     @include respond(tabPort){
-        font-size: 50%; // 1rem = 8px, 8 / 16 = 50%.
+        font-size: 8px; // 1rem = 8px, 8 / 16 = 50%.
     }
-    @include respond(tabLand){
-        font-size: 52.25%; //1rem = 9px, 9 / 16 = 52.25%
+    @include respond(phone){
+        font-size: 5px; // 1rem = 8px, 8 / 16 = 50%.
     }
     @include respond(bigDesk){
-        font-size: 80%; // 1rem = 12px, 12 / 16 = 75%
+        font-size:12px; // 1rem = 12px, 12 / 16 = 75%
     }
 }
 body{
