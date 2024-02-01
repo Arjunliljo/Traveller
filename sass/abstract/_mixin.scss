@@ -57,3 +57,44 @@
         background-color: transparent;
     }
 }
+
+// MEDIA QUERY MANAGER
+
+/*
+    0 - 600px -- phone
+    600 - 900px -- tablet potrait
+    900 - 1200px -- tablet landscape
+    1200 - 1800px -- normal style applies
+    1800px + -- larget desktop
+*/
+
+
+/*
+break point choices
+    -phone
+    -tabPort
+    -tabLand
+    -bigDesk
+*/
+@mixin respond($breakPoint){
+    @if $breakPoint == phone{
+        @media (max-width:600px) {
+           @content;
+        }
+    }
+    @if $breakPoint == tabPort{
+        @media (max-width:900px) {
+           @content;
+        }
+    }
+    @if $breakPoint == tabLand{
+        @media (max-width:1200px) {
+            @content;
+        }
+    }
+    @if $breakPoint == bigDesk{
+        @media (min-width:1800px) {
+            @content;
+        }
+    }
+}

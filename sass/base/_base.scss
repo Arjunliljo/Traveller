@@ -7,6 +7,19 @@
 }
 html{
     font-size: 62.5%;
+
+    @include respond(phone){
+        font-size: 50%;
+    }
+    @include respond(tabPort){
+        font-size: 60%;
+    }
+    @include respond(tabLand){
+        font-size: 70%;
+    }
+    @include respond(bigDesk){
+        font-size: 80%;
+    }
 }
 body{
     box-sizing: border-box;
