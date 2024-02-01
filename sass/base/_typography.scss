@@ -34,8 +34,7 @@ body{
         animation-iteration-count: 5; */
 
         @include respond(phone){
-            letter-spacing: 1.5rem;
-            font-size: 7rem;
+            letter-spacing: 1rem;
         }
     }
     &--sub{
@@ -47,8 +46,7 @@ body{
         margin-bottom: 5rem;
 
         @include respond(phone){
-            letter-spacing: .8rem;
-            font-size: 3rem;
+            letter-spacing: .5rem;
         }
     }
 }
