@@ -27,8 +27,17 @@
         position: absolute;
         top: 4rem;
         left: 4rem;
+
+        @include respond(phone){
+            top: 8rem;
+            left: 6rem;
+        }
     }
     &__logo{
         height: 3.5rem;
+
+        @include respond(phone){
+            height: 4rem;
+        }
     }
 }

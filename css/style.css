@@ -134,6 +134,10 @@ body {
   @media (max-width: 900px) {
     .heading-secondary {
       font-size: 3rem; } }
+  @media (max-width: 600px) {
+    .heading-secondary {
+      width: 50rem;
+      font-size: 4rem; } }
 
 .heading-thertiary {
   font-size: 1.6rem;
@@ -184,8 +188,15 @@ body {
     position: absolute;
     top: 4rem;
     left: 4rem; }
+    @media (max-width: 600px) {
+      .header__logo-box {
+        top: 8rem;
+        left: 6rem; } }
   .header__logo {
     height: 3.5rem; }
+    @media (max-width: 600px) {
+      .header__logo {
+        height: 4rem; } }
 
 .row {
   max-width: 114rem;
