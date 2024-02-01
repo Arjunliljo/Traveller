@@ -4,7 +4,7 @@
     margin-top: -20vh;
 
     @include respond(tabPort){
-        margin-top: 0px;
+        margin-top: -10vh;
     }
 }
 .section-features{

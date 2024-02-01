@@ -789,7 +789,7 @@ body {
   margin-top: -20vh; }
   @media (max-width: 900px) {
     .section-about {
-      margin-top: 0px; } }
+      margin-top: -10vh; } }
 
 .section-features {
   padding: 18rem 0;
