@@ -69,6 +69,9 @@ body {
   font-weight: 400;
   color: #777;
   padding: 3rem; }
+  @media (max-width: 900px) {
+    body {
+      padding: 0px; } }
 
 .text-box {
   position: absolute;

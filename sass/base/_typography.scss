@@ -6,6 +6,10 @@ body{
     font-weight: 400;
     color: #777;
     padding: 3rem;
+    
+    @include respond(tabPort){
+        padding: 0px;
+    }
 }
 
 .text-box{
