@@ -193,6 +193,9 @@ body {
     float: left; }
     .row [class^="col-"]:not(:last-child) {
       margin-right: 6rem; }
+    @media (max-width: 900px) {
+      .row [class^="col-"] {
+        width: 100% !important; } }
   .row::after {
     content: "";
     display: table;
@@ -802,6 +805,14 @@ body {
   margin-top: -20rem; }
   .section-features > * {
     transform: skewY(7deg); }
+  @media (max-width: 900px) {
+    .section-features {
+      margin-top: 1rem;
+      transform: skewY(0deg) translateY(-5rem);
+      padding-bottom: 10rem;
+      padding-top: 30rem; }
+      .section-features > * {
+        transform: skewY(0deg); } }
 
 .section-tours {
   background-color: #f7f7f7;

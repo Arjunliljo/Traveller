@@ -21,6 +21,17 @@
     & > * {
         transform: skewY(7deg);
     }
+    @include respond(tabPort){
+        margin-top: 1rem;
+        transform: skewY(0deg) translateY(-5rem);
+
+        padding-bottom: 10rem;
+        padding-top: 30rem;
+
+        & > * {
+            transform: skewY(0deg);
+        }
+    }
  
 }
 .section-tours{
