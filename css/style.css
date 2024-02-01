@@ -115,7 +115,8 @@ body {
         font-size: 4rem;
         font-family: "Roboto", sans-serif;
         font-weight: 100;
-        font-style: normal; } }
+        font-style: normal;
+        margin-top: -3rem; } }
 
 .heading-secondary {
   font-size: 3.5rem;
