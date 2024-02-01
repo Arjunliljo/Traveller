@@ -111,7 +111,7 @@ body {
     text-wrap: nowrap; }
     @media (max-width: 600px) {
       .primery-title--sub {
-        letter-spacing: 1rem;
+        letter-spacing: .8rem;
         font-size: 4rem;
         font-family: "Roboto", sans-serif;
         font-weight: 300;
@@ -787,6 +787,9 @@ body {
   background-color: #f7f7f7;
   padding: 25rem 0;
   margin-top: -20vh; }
+  @media (max-width: 900px) {
+    .section-about {
+      margin-top: 0px; } }
 
 .section-features {
   padding: 18rem 0;

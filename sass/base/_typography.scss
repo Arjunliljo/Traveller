@@ -49,7 +49,7 @@ body{
         text-wrap: nowrap;
 
         @include respond(phone){
-            letter-spacing: 1rem;
+            letter-spacing: .8rem;
             font-size: 4rem;
             font-family: "Roboto", sans-serif;
             font-weight: 300;
