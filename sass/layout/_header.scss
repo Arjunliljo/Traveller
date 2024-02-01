@@ -17,6 +17,10 @@
     /* in these x and y axis contained area shuould be visible in the header */
     clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 
+    @include respond(phone){
+        clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+    }
+
     position: relative;
 
     &__logo-box{

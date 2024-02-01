@@ -177,6 +177,9 @@ body {
   /* in these x and y axis contained area shuould be visible in the header */
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   position: relative; }
+  @media (max-width: 600px) {
+    .header {
+      clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%); } }
   .header__logo-box {
     position: absolute;
     top: 4rem;
@@ -202,7 +205,8 @@ body {
         margin-bottom: 5rem; } }
   @media (max-width: 900px) {
     .row {
-      max-width: 50rem; } }
+      max-width: 60rem;
+      font-size: 2rem; } }
   .row::after {
     content: "";
     display: table;

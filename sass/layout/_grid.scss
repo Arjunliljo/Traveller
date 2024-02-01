@@ -24,7 +24,8 @@
     }
 
     @include respond(tabPort){
-        max-width: 50rem;
+        max-width: 60rem;
+        font-size: 2rem;
     }
 
     @include clearfix;
