@@ -50,5 +50,7 @@
         padding-top: 2rem;
         border-top: 1px solid #777;
         display: inline-block;
+        hyphens: auto;
+        text-wrap: pretty;
     }
 }

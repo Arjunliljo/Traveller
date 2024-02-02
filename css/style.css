@@ -269,7 +269,9 @@ body {
   .footer__copyright {
     padding-top: 2rem;
     border-top: 1px solid #777;
-    display: inline-block; }
+    display: inline-block;
+    hyphens: auto;
+    text-wrap: pretty; }
 
 .navigation__checkbox {
   visibility: hidden;
