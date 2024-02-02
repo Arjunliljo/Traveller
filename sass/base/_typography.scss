@@ -78,8 +78,8 @@ body{
     cursor: pointer;
 
     @include respond(tabPort){
-        width: 75%;
-        font-size: 6rem;
+        width: 90%;
+        font-size: 5.5rem;
         margin-bottom: 0px;
     }
 }
