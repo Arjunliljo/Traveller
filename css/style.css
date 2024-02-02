@@ -143,7 +143,8 @@ body {
 .heading-thertiary {
   font-size: 1.6rem;
   font-weight: 700;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  text-wrap: nowrap; }
 
 .paragraph {
   font-size: 1.6rem; }
@@ -719,8 +720,18 @@ body {
   font-size: 1.6rem;
   cursor: pointer;
   transform: skewX(-12deg); }
+  @media (max-width: 900px) {
+    .story {
+      padding: 4rem;
+      padding-left: 6rem; } }
+  @media (max-width: 900px) {
+    .story {
+      transform: skew(-5deg); } }
   .story > * {
     transform: skewX(12deg); }
+    @media (max-width: 900px) {
+      .story > * {
+        transform: skew(5deg); } }
   .story__shape {
     height: 15rem;
     width: 15rem;
@@ -729,6 +740,9 @@ body {
     clip-path: circle(50% at 50% 50%);
     transform: translateX(-3rem) skewX(12deg);
     position: relative; }
+    @media (max-width: 900px) {
+      .story__shape {
+        transform: translateX(-3rem) skewX(5deg); } }
   .story__image {
     height: inherit;
     transform: translateX(-4rem) scale(1.5);

@@ -90,6 +90,7 @@ body{
     font-size: $default-font-size;
     font-weight: 700;
     text-transform: uppercase;
+    text-wrap: nowrap;
 }
 .paragraph{
     font-size: $default-font-size;

@@ -8,11 +8,24 @@
     padding-left: 9rem;
     font-size: $default-font-size;
     cursor: pointer;
+
+    @include respond(tabPort){
+        padding: 4rem;
+        padding-left: 6rem;
+    }
     
     transform: skewX(-12deg);
 
+    @include respond(tabPort){
+        transform: skew(-5deg);
+    }
+
     & > *{
         transform: skewX(12deg);
+        
+        @include respond(tabPort){
+            transform: skew(5deg);
+        }
     }
 
     &__shape{
@@ -22,6 +35,9 @@
         shape-outside: circle(50% at 50% 50%);
         clip-path: circle(50% at 50% 50%);
         transform: translateX(-3rem) skewX(12deg);
+        @include respond(tabPort){
+            transform: translateX(-3rem) skewX(5deg);
+        }
         position: relative;
     }
     &__image{
