@@ -8,7 +8,7 @@
     cursor: pointer;
     height: 52rem;
     @include respond(tabPort){
-        height: 70rem;
+        height: 76rem;
     }
 
     &__side{
@@ -136,7 +136,7 @@
                 padding: .9rem;
 
                 @include respond(tabPort){
-                    padding: 1.5rem;
+                    padding: 2rem;
                 }
 
                 &:not(:last-child){
