@@ -47,6 +47,10 @@
 .section-book{
     padding: 15rem 15rem;
     background-image: linear-gradient(to right, $color-primery-light, $color-primery-dark);
+
+    @include respond(tabPort){
+        padding: 8rem;
+    }
 }
 .book{
     height: 50rem;
@@ -57,6 +61,7 @@
         background-image: linear-gradient(to right, rgba($color-white, 0.9), rgb(192, 192, 192)), url(../img/nat-10.jpg);
         background-size: cover;
         height: 100%;
+
     }
 
     &__form{

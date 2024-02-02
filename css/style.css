@@ -835,7 +835,7 @@ body {
   width: 30%; }
   @media (max-width: 900px) {
     .form__radio-group {
-      width: 49%; } }
+      width: 40%; } }
 
 .form__radio-label {
   position: relative;
@@ -922,6 +922,9 @@ body {
 .section-book {
   padding: 15rem 15rem;
   background-image: linear-gradient(to right, #59afff, #5643fa); }
+  @media (max-width: 900px) {
+    .section-book {
+      padding: 8rem; } }
 
 .book {
   height: 50rem;
