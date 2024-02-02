@@ -18,7 +18,7 @@
         transition: all .3s;
 
         @include respond(tabPort){
-            
+            font-size: 3rem;
             width: 100%;
         }
 
@@ -46,24 +46,32 @@
         transition: all .3s;
 
         @include respond(tabPort){
-            font-size: 2rem;
+            font-size: 1.8rem;
+            margin-bottom: 2rem;
         }
     }
     &__input:placeholder-shown + &__label{
         opacity: 0;
         visibility: hidden;
-        transform: translateY(-4rem);
+        transform: translateY(-3rem);
      }
 
      &__radio-group{
         display: inline-block;
         width: 30%;
+
+        @include respond(tabPort){
+            width: 49%;
+        }
      }
      &__radio-label{
         position: relative;
         cursor: pointer;
         font-size: $default-font-size;
         padding-left: 4rem;
+        @include respond(tabPort){
+            font-size: 3rem;
+        }
        }
      &__radio-button{
         width: 3rem;
@@ -74,6 +82,13 @@
         position: absolute;
         top: -.7rem;
         left: 0;
+
+        @include respond(tabPort){
+            top: -.4rem;
+            height: 4rem;
+            width: 4rem;
+            left: -1rem;
+        }
         
         &::after{
             content: "";
@@ -88,6 +103,11 @@
             transform: translate(-50%, -50%);
             opacity: 0;
             transition: opacity .3s;
+
+            @include respond(tabPort){
+                height: 2rem;
+                width: 2rem;
+            }
         }
 
      }

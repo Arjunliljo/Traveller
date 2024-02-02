@@ -802,6 +802,7 @@ body {
   transition: all .3s; }
   @media (max-width: 900px) {
     .form__input {
+      font-size: 3rem;
       width: 100%; } }
   .form__input:focus {
     outline: none;
@@ -821,22 +822,29 @@ body {
   transition: all .3s; }
   @media (max-width: 900px) {
     .form__label {
-      font-size: 2rem; } }
+      font-size: 1.8rem;
+      margin-bottom: 2rem; } }
 
 .form__input:placeholder-shown + .form__label {
   opacity: 0;
   visibility: hidden;
-  transform: translateY(-4rem); }
+  transform: translateY(-3rem); }
 
 .form__radio-group {
   display: inline-block;
   width: 30%; }
+  @media (max-width: 900px) {
+    .form__radio-group {
+      width: 49%; } }
 
 .form__radio-label {
   position: relative;
   cursor: pointer;
   font-size: 1.6rem;
   padding-left: 4rem; }
+  @media (max-width: 900px) {
+    .form__radio-label {
+      font-size: 3rem; } }
 
 .form__radio-button {
   width: 3rem;
@@ -847,6 +855,12 @@ body {
   position: absolute;
   top: -.7rem;
   left: 0; }
+  @media (max-width: 900px) {
+    .form__radio-button {
+      top: -.4rem;
+      height: 4rem;
+      width: 4rem;
+      left: -1rem; } }
   .form__radio-button::after {
     content: "";
     display: block;
@@ -860,6 +874,10 @@ body {
     transform: translate(-50%, -50%);
     opacity: 0;
     transition: opacity .3s; }
+    @media (max-width: 900px) {
+      .form__radio-button::after {
+        height: 2rem;
+        width: 2rem; } }
 
 .form__radio-input {
   opacity: 0; }
