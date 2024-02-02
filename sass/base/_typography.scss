@@ -78,11 +78,8 @@ body{
     cursor: pointer;
 
     @include respond(tabPort){
-        font-size: 3rem;
-    }
-    @include respond(phone){
-        width: 50rem;
-        font-size: 4rem;
+        width: 75%;
+        font-size: 6rem;
         margin-bottom: 0px;
     }
 }
@@ -96,5 +93,4 @@ body{
     &:not(:last-child){
         margin-bottom: 3rem;
     }
-    
 }

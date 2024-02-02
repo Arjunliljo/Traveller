@@ -2,8 +2,6 @@
   
     &__group:not(:last-child){  
         margin-bottom: rem;
-        display: inline-block;
-        width: 40%;
         
     }
 
@@ -21,6 +19,7 @@
 
         @include respond(tabPort){
             
+            width: 100%;
         }
 
         &:focus{

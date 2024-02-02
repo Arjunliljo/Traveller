@@ -54,8 +54,9 @@
     background-size: 100%;
 
     @include respond(tabPort){
-        background-image: linear-gradient(rgba($color-white, 0.9) 50%, rgb(192, 192, 192)), url(../img/nat-10.jpg);
+        background-image: linear-gradient(to right, rgba($color-white, 0.9), rgb(192, 192, 192)), url(../img/nat-10.jpg);
         background-size: cover;
+        height: 60rem;
     }
 
     &__form{
@@ -64,6 +65,7 @@
 
         @include respond(tabPort){
             width: 100%;
+            text-align: center;
         }
     }
 }
