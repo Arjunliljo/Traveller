@@ -83,6 +83,7 @@ body{
     @include respond(phone){
         width: 50rem;
         font-size: 4rem;
+        margin-bottom: 0px;
     }
 }
 .heading-thertiary{

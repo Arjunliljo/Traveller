@@ -137,7 +137,8 @@ body {
   @media (max-width: 600px) {
     .heading-secondary {
       width: 50rem;
-      font-size: 4rem; } }
+      font-size: 4rem;
+      margin-bottom: 0px; } }
 
 .heading-thertiary {
   font-size: 1.6rem;
@@ -497,11 +498,15 @@ body {
     text-transform: uppercase;
     padding: 1.5rem 4rem;
     display: inline-block;
-    border-radius: 3rem;
+    border-radius: 3.6rem;
     transition: transform 0.5s ease, box-shadow 0.5s ease;
     position: relative;
     backface-visibility: hidden;
     will-change: transform; }
+    @media (max-width: 900px) {
+      .btn, .btn:link, .btn:visited {
+        font-size: 3.5rem;
+        padding: 2rem 4.5rem; } }
     .btn::after, .btn:link::after, .btn:visited::after {
       content: "";
       display: inline-block;
