@@ -143,8 +143,7 @@ body {
 .heading-thertiary {
   font-size: 1.6rem;
   font-weight: 700;
-  text-transform: uppercase;
-  text-wrap: nowrap; }
+  text-transform: uppercase; }
 
 .paragraph {
   font-size: 1.6rem; }
@@ -723,7 +722,8 @@ body {
   @media (max-width: 900px) {
     .story {
       padding: 4rem;
-      padding-left: 6rem; } }
+      padding-left: 6rem;
+      width: 80%; } }
   @media (max-width: 900px) {
     .story {
       transform: skew(-5deg); } }
@@ -765,6 +765,14 @@ body {
   .story:hover .story__image {
     transform: translateX(-4rem) scale(1);
     filter: blur(2px) brightness(80%); }
+  @media (max-width: 900px) {
+    .story__text h3 {
+      font-size: 2.5rem;
+      text-wrap: pretty; }
+    .story__text p {
+      font-size: 2rem;
+      text-wrap: stable;
+      hyphens: auto; } }
 
 .bg__video {
   position: absolute;

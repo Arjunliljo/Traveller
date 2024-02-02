@@ -12,6 +12,7 @@
     @include respond(tabPort){
         padding: 4rem;
         padding-left: 6rem;
+        width: 80%;
     }
     
     transform: skewX(-12deg);
@@ -67,5 +68,17 @@
     &:hover &__image{
         transform: translateX(-4rem) scale(1);
         filter: blur(2px) brightness(80%);
+    }
+
+    @include respond(tabPort){
+        &__text h3{
+            font-size: 2.5rem;
+            text-wrap: pretty;
+        }
+        &__text p{
+            font-size: 2rem;
+            text-wrap:stable;
+            hyphens: auto;
+        }
     }
 }
