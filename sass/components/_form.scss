@@ -2,6 +2,8 @@
   
     &__group:not(:last-child){  
         margin-bottom: rem;
+        display: inline-block;
+        width: 40%;
         
     }
 
@@ -16,6 +18,11 @@
         display: block;
         width: 90%;
         transition: all .3s;
+
+        @include respond(tabPort){
+            
+        }
+
         &:focus{
             outline: none;
             box-shadow: 0px 1rem 2rem rgba(black, 0.1);
@@ -30,8 +37,6 @@
         }
     
     }
-
-  
 
     &__label{
         margin-left: 2rem;

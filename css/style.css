@@ -770,7 +770,7 @@ body {
       font-size: 2.5rem;
       text-wrap: pretty; }
     .story__text p {
-      font-size: 2rem;
+      font-size: 2.5rem;
       text-wrap: stable;
       hyphens: auto; } }
 
@@ -790,7 +790,9 @@ body {
     height: 100%; }
 
 .form__group:not(:last-child) {
-  margin-bottom: rem; }
+  margin-bottom: rem;
+  display: inline-block;
+  width: 40%; }
 
 .form__input {
   font-size: 1.5rem;
@@ -906,6 +908,13 @@ body {
   height: 50rem;
   background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(../img/nat-10.jpg);
   background-size: 100%; }
+  @media (max-width: 900px) {
+    .book {
+      background-image: linear-gradient(rgba(255, 255, 255, 0.9) 50%, silver), url(../img/nat-10.jpg);
+      background-size: cover; } }
   .book__form {
     width: 50%;
     padding: 6rem; }
+    @media (max-width: 900px) {
+      .book__form {
+        width: 100%; } }
