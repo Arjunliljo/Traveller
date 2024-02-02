@@ -589,6 +589,9 @@ body {
   position: relative;
   cursor: pointer;
   height: 52rem; }
+  @media (max-width: 900px) {
+    .card {
+      height: 70rem; } }
   .card__side {
     height: 52rem;
     text-align: center;
@@ -615,6 +618,9 @@ body {
         background-image: linear-gradient(to right bottom, #7edf6f, #28b485); }
       .card__side--back-3 {
         background-image: linear-gradient(to right bottom, #59afff, #5643fa); }
+    @media (max-width: 900px) {
+      .card__side {
+        height: 100%; } }
   .card--text {
     text-transform: none; }
   .card:hover .card__side--front {
@@ -645,6 +651,9 @@ body {
     top: 14rem;
     right: 1rem;
     width: 60%; }
+    @media (max-width: 900px) {
+      .card__heading {
+        font-size: 4rem; } }
   .card__heading--span {
     padding: 1rem;
     -webkit-box-decoration-break: clone;
@@ -660,12 +669,18 @@ body {
     margin: 0 auto;
     font-size: 1.2rem;
     padding: 3rem; }
+    @media (max-width: 900px) {
+      .card__details {
+        font-size: 2.5rem; } }
     .card__details ul {
       text-decoration: none;
       list-style: none;
       font-weight: 700; }
       .card__details ul li {
         padding: .9rem; }
+        @media (max-width: 900px) {
+          .card__details ul li {
+            padding: 1.5rem; } }
         .card__details ul li:not(:last-child) {
           border-bottom: 1px solid #eee; }
   .card__cta {
