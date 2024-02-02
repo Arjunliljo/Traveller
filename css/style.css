@@ -483,6 +483,9 @@ body {
     font-size: 1.6rem; }
     .btn-white::after {
       background-color: #fff; }
+    @media (max-width: 900px) {
+      .btn-white {
+        margin-top: 5rem; } }
   .btn-blue {
     color: #fff;
     background-color: #5643fa;

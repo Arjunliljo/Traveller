@@ -9,6 +9,10 @@
         &::after{
             background-color: $color-white;
         }
+
+        @include respond(tabPort){
+            margin-top: 5rem;
+        }
     }
 
     &-blue{
