@@ -86,6 +86,10 @@
         padding: .5rem;
         border-bottom: 1px solid $color-primery-light;
         transition: all 0.3s;
+
+        @include respond(tabPort){
+            font-size: 3rem;
+        }
     }
 
     &:hover{

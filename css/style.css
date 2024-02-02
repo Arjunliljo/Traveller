@@ -537,6 +537,9 @@ body {
   padding: .5rem;
   border-bottom: 1px solid #59afff;
   transition: all 0.3s; }
+  @media (max-width: 900px) {
+    .btn-learn-more:link, .btn-learn-more:visited {
+      font-size: 3rem; } }
 
 .btn-learn-more:hover {
   transform: translateY(-0.5rem);
