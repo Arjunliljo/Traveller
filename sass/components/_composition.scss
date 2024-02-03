@@ -11,6 +11,11 @@
         cursor: pointer;
         position: absolute;
         transition:transform 0.2s, opacity 0.2s, outline 0.2s;
+
+        @include respond(tabPort){
+            transition:transform 0.5s, opacity 0.5s, outline 0.5s;
+        }
+
         z-index: 10;
         outline-offset: 2rem;
         outline: 1.5rem solid rgba(0, 0, 0, 0);
