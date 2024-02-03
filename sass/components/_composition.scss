@@ -1,6 +1,9 @@
 .composition{
     position: relative;
-    padding: -5rem;
+
+    @include respond(tabPort){
+        padding-bottom: -15rem;
+    }
 
     &__photo{
         width: 55%;
@@ -22,6 +25,10 @@
             left: -4rem;
 
             @include respond(tabPort){
+                top: -2rem;
+                left: -8rem;
+            }
+            &:hover{
                 left: 0rem;
             }
         }
@@ -30,7 +37,7 @@
             right: 0;
 
             @include respond(tabPort){
-                top: -4rem;
+                top: -2rem;
                 right: -8rem;
             }
 

@@ -565,8 +565,10 @@ body {
   box-shadow: 0rem 0.5rem 1.8rem rgba(0, 0, 0, 0.1); }
 
 .composition {
-  position: relative;
-  padding: -5rem; }
+  position: relative; }
+  @media (max-width: 900px) {
+    .composition {
+      padding-bottom: -15rem; } }
   .composition__photo {
     width: 55%;
     box-shadow: 0rem 0.1rem 2rem rgba(0, 0, 0, 0.4);
@@ -585,13 +587,16 @@ body {
       left: -4rem; }
       @media (max-width: 900px) {
         .composition__photo--p1 {
-          left: 0rem; } }
+          top: -2rem;
+          left: -8rem; } }
+      .composition__photo--p1:hover {
+        left: 0rem; }
     .composition__photo--p2 {
       top: 2rem;
       right: 0; }
       @media (max-width: 900px) {
         .composition__photo--p2 {
-          top: -4rem;
+          top: -2rem;
           right: -8rem; } }
       .composition__photo--p2:hover {
         right: 0rem; }
