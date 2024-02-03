@@ -67,7 +67,8 @@
             transition: all .5s;   
             
             @include respond(tabPort){
-                font-size: 4rem;
+                font-size: 3rem;
+                font-weight: 500;
             }
         }
         &:hover,

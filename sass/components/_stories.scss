@@ -10,9 +10,13 @@
     cursor: pointer;
 
     @include respond(tabPort){
+        width: 85%;
+    }
+
+    @include respond(tabPort){
         padding: 4rem;
         padding-left: 6rem;
-        width: 80%;
+        width: 100%;
     }
     
     transform: skewX(-12deg);
