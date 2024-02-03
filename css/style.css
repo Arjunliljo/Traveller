@@ -332,6 +332,10 @@ body {
 
 .navigation__item {
   margin: 1rem; }
+  @media (max-width: 900px) {
+    .navigation__item {
+      margin: 0;
+      margin-bottom: 5rem; } }
 
 .navigation__link:link, .navigation__link:visited {
   display: inline-block;
@@ -348,7 +352,7 @@ body {
   transition: all .5s; }
   @media (max-width: 900px) {
     .navigation__link:link, .navigation__link:visited {
-      font-size: 3rem;
+      font-size: 4rem;
       font-weight: 500; } }
 
 .navigation__link:hover, .navigation__link:active {

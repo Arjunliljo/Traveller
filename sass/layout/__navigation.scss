@@ -49,6 +49,10 @@
     }
     &__item{
         margin: 1rem;
+        @include respond(tabPort){
+            margin: 0;
+            margin-bottom: 5rem;
+        }
     }
     &__link{
         &:link,
@@ -67,7 +71,7 @@
             transition: all .5s;   
             
             @include respond(tabPort){
-                font-size: 3rem;
+                font-size: 4rem;
                 font-weight: 500;
             }
         }
