@@ -67,7 +67,7 @@ body{
     // cliping mask
     background-clip: text;
     color: transparent;
-
+    line-height: normal;
     transition: all .5s;
     
     &:hover{
