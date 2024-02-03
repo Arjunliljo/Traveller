@@ -565,7 +565,8 @@ body {
   box-shadow: 0rem 0.5rem 1.8rem rgba(0, 0, 0, 0.1); }
 
 .composition {
-  position: relative; }
+  position: relative;
+  padding: -5rem; }
   .composition__photo {
     width: 55%;
     box-shadow: 0rem 0.1rem 2rem rgba(0, 0, 0, 0.4);
@@ -576,22 +577,34 @@ body {
     outline-offset: 2rem;
     outline: 1.5rem solid rgba(0, 0, 0, 0);
     backface-visibility: hidden; }
+    @media (max-width: 900px) {
+      .composition__photo {
+        width: 70%; } }
     .composition__photo--p1 {
       top: -2rem;
-      left: 0px; }
+      left: -4rem; }
+      @media (max-width: 900px) {
+        .composition__photo--p1 {
+          left: 0rem; } }
     .composition__photo--p2 {
       top: 2rem;
       right: 0; }
+      @media (max-width: 900px) {
+        .composition__photo--p2 {
+          top: -4rem;
+          right: -8rem; } }
+      .composition__photo--p2:hover {
+        right: 0rem; }
     .composition__photo--p3 {
       top: 10rem;
       left: 20%; }
     .composition__photo:hover {
       outline-color: #5643fa;
-      transform: scale(1.05) translateY(-0.5rem);
+      transform: scale(1.1) translateY(-0.5rem);
       box-shadow: 0px 1.5rem 2.5rem rgba(0, 0, 0, 0.6);
       z-index: 20; }
   .composition:hover .composition__photo:not(:hover) {
-    transform: scale(0.95); }
+    transform: scale(1); }
 
 .card {
   perspective: 150rem;
