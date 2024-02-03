@@ -18,14 +18,14 @@
     transform: skewX(-12deg);
 
     @include respond(tabPort){
-        transform: skew(-5deg);
+        transform: skew(0deg);
     }
 
     & > *{
         transform: skewX(12deg);
         
         @include respond(tabPort){
-            transform: skew(5deg);
+            transform: skew(0deg);
         }
     }
 

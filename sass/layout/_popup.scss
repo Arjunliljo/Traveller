@@ -109,7 +109,7 @@
         transition: all .3s;
 
         @include respond(tabPort){
-            top: -25rem;
+            top: -23rem;
             z-index: 1000;
             font-size: 5rem; 
             border-radius: 50%;
