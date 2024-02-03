@@ -25,6 +25,10 @@
         transform: scale(.3);
 
         transition: all .5s .2s;
+
+        @include respond(tabPort){
+            height: 10rem;
+        }
     }
 
     &__left{

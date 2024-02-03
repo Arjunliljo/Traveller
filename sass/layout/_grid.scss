@@ -8,7 +8,6 @@
 
     [class ^= "col-"]{
         float: left;
-
         &:not(:last-child){
             margin-right: $grid-gutter-horizontal;
 
@@ -28,7 +27,6 @@
         max-width: 60rem;
         font-size: 2rem;
     }
-
     @include clearfix;
 
     .col-1-2{

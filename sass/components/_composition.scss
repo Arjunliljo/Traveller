@@ -1,6 +1,6 @@
 .composition{
     position: relative;
-
+    transition: all 1s;
     @include respond(tabPort){
         padding-bottom: -15rem;
     }
@@ -11,7 +11,6 @@
         cursor: pointer;
         position: absolute;
         transition:transform 0.2s, opacity 0.2s, outline 0.2s;
-
         @include respond(tabPort){
             transition:transform 0.5s, opacity 0.5s, outline 0.5s;
         }
@@ -26,12 +25,11 @@
         }
 
         &--p1{
-            top: -2rem;
-            left: -4rem;
-
+            top: 0rem;
+            left: 0rem;
+            transition: transform .2s;
             @include respond(tabPort){
-                top: -2rem;
-                left: -8rem;
+                transform: translateX(-8rem) translateY(-1.8rem);
             }
             &:hover{
                 left: 0rem;
@@ -40,12 +38,10 @@
         &--p2{
             top: 2rem;
             right: 0;
-
+            transition: transform .2s;
             @include respond(tabPort){
-                top: -2rem;
-                right: -8rem;
+                transform: translateY(-4rem) translateX(8rem);
             }
-
             &:hover{
                 right: 0rem;
             }
@@ -53,6 +49,7 @@
         &--p3{
             top: 10rem;
             left: 20%;
+            transition: transform .2s;
         }
         &:hover{
             outline-color: $color-primery-dark;
@@ -63,7 +60,6 @@
     }
 
     &:hover &__photo:not(:hover){
-
         transform: scale(1);
     }
 }
