@@ -64,8 +64,7 @@ html {
 
 body {
   padding: 3rem;
-  box-sizing: border-box;
-  background-color: red; }
+  box-sizing: border-box; }
   @media (max-width: 900px) {
     body {
       padding: 0px; } }
