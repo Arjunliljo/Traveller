@@ -94,7 +94,7 @@
         opacity: 1;
     }
     &__checkbox:checked ~ &__background{
-        transform: scale(50);
+        transform: scale(100);
     }
     @include navigationIconCross;
 
