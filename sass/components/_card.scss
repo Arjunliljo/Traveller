@@ -7,8 +7,9 @@
     position: relative;
     cursor: pointer;
     height: 52rem;
-    @include respond(tabPort){
-        height: 76rem;
+
+    @include respond(tab-port){
+        height: 70rem;
     }
 
     &__side{
@@ -22,7 +23,10 @@
         top: 0px;
         left: 0px;
         width: 100%;
+
+        -webkit-backface-visibility: hidden;
         backface-visibility: hidden;
+        
         box-shadow: 0rem 1.5rem 4rem rgba($color-black, 0.15);
     
         transition: transform 1s ease;
@@ -44,11 +48,6 @@
                 background-image: linear-gradient(to right bottom, $color-primery-light, $color-primery-dark);
             }
         }
-
-        @include respond(tabPort){
-            height: 100%;
-        }
-
     }
 
     &--text{
@@ -132,13 +131,13 @@
             text-decoration: none;
             list-style: none;
             font-weight: 700;
+
             li{
                 padding: .9rem;
-
-                @include respond(tabPort){
-                    padding: 2rem;
+                @include respond(tab-port){
+                    margin-top: 10rem;
+                    font-size: 1rem;
                 }
-
                 &:not(:last-child){
                     border-bottom: 1px solid #eee;
                 }
@@ -175,4 +174,55 @@
         font-size: 6rem;
         margin-bottom: 8rem;
     }
+
+    @media only screen and (max-width: 56.25em),
+    only screen and (hover: none) {
+            height: auto;
+            border-radius: 3px;
+            background-color: $color-white;
+            box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+
+            &__side {
+                height: auto;
+                position: relative;
+                box-shadow: none;
+
+                &--back {
+                    transform: rotateY(0);
+                    clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
+                }
+
+                &--front{
+                    transform:rotateY(0deg);
+                }
+            }
+            
+            &:hover &__side--front {
+                transform: rotateY(0);
+            }
+
+            &__details {
+                padding: 3rem;
+                margin-top: 3rem;
+            }
+
+            // FRONT SIDE STYLING
+            &__cta {
+                position: relative;
+                top: 0%;
+                left: 0;
+                transform: translate(0);
+                width: 100%;
+                padding: 7rem 4rem 4rem 4rem;
+            }
+
+            &__price-box {
+                margin-bottom: 3rem;
+            }
+
+            &__price-value {
+                font-size: 4rem;
+                margin-bottom: 0px;
+            }
+     }
 }

@@ -28,3 +28,8 @@ body{
         padding: 0px;
     }
 }
+
+::selection{
+    background-color: yellow;
+    color: black;
+}

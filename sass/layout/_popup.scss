@@ -12,6 +12,12 @@
     align-items: center;
     justify-content: center;
 
+    @supports(-webkit-backdrop-filter:blur(10px)) or (backdrop-filter: blur(10px)){
+        -webkit-backdrop-filter:blur(10px);
+        backdrop-filter: blur(10px);
+        background-color: rgba($color-black, 0.3);
+    }
+   
     transition: all .3s;
 
 
@@ -23,8 +29,7 @@
         display: table;
         opacity: 0;
         transform: scale(.3);
-        transition: all .5s .2s;
-
+        transition : all .5s .2s;
         @include respond(tabPort){
             
             width: 85%;

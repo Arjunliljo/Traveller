@@ -4,7 +4,14 @@
     background-image: linear-gradient(
         to right bottom,rgba($color-primery-light, 0.8), 
         rgba($color-primery-dark, 0.8)), 
-        url('../img/hero.jpg');
+        url('../img/hero-small.jpg');
+
+    @media (min-resolution:192dpi) {
+        background-image: linear-gradient(
+            to right bottom,rgba($color-primery-light, 0.8), 
+            rgba($color-primery-dark, 0.8)), 
+            url('../img/hero.jpg');
+    }
 
     /* always try to fit inside the box entirely*/
     background-size: cover;

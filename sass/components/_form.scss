@@ -1,5 +1,4 @@
 .form{
-  
     &__group:not(:last-child){  
         margin-bottom: 0rem;
         
@@ -118,4 +117,7 @@
        opacity: 1;
      }
 
+}
+.book{
+    box-shadow: 0rem 2rem 4rem rgba($color-black, 0.3);
 }
