@@ -1,0 +1,107 @@
+
+body{
+    font-family: "Nato", sans-serif;
+    line-height: 1.7;
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #777;
+
+}
+
+.text-box{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    /* to fix shaking while animation in sub contents */
+    backface-visibility: hidden;
+
+}
+
+.primery-title{
+    color: $color-white;
+    text-transform: uppercase;   
+    
+    &--main{
+        font-size: 6rem;
+        display: block;
+        letter-spacing: 3rem;
+        animation-name: moveLeftoRight;
+        animation-duration: 1.5s;
+        animation-timing-function: ease-out;
+        /* animation-delay: 1s;
+        animation-iteration-count: 5; */
+
+        @include respond(phone){
+            letter-spacing: 1rem;
+            font-size: 10rem;
+        }
+    }
+    &--sub{
+        font-size: 2rem;
+        display: block;
+        letter-spacing: 1.7rem;
+        animation: moveRightoLeft 1.5s ease-out;
+        /* adjustment */
+        margin-bottom: 5rem;
+
+        text-wrap: nowrap;
+
+        @include respond(phone){
+            letter-spacing: .8rem;
+            font-size: 4rem;
+            font-family: "Roboto", sans-serif;
+            font-weight: 300;
+            font-style: normal;
+            margin-top: -3rem;
+        }
+    }
+}
+.heading-secondary{
+    font-size: 3.5rem;
+    font-weight: 700;
+    display: inline-block;
+    text-transform: uppercase;
+    background:linear-gradient(to right, $color-primery-light, $color-primery-dark); 
+    // cliping mask
+    background-clip: text;
+    color: transparent;
+    line-height: normal;
+    transition: all .5s;
+    
+    &:hover{
+        transform: skewY(3deg) skewX(5deg) scale(1.2);
+        text-shadow: .5rem 1rem 2rem rgba($color-black, .2);
+    }
+
+    cursor: pointer;
+
+    @include respond(tabPort){
+        width: 90%;
+        font-size: 5.5rem;
+        margin-bottom: 0px;
+    }
+}
+.heading-thertiary{
+    font-size: $default-font-size;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    @include respond(tabPort){
+        font-size: 3rem;
+        text-align: center;
+    }
+}
+.paragraph{
+    font-size: $default-font-size;
+    &:not(:last-child){
+        margin-bottom: 3rem;
+    }
+    @include respond(tabPort){
+        font-size: 3rem;
+        text-align: justify;
+        text-align-last: justify;
+        hyphens: manual;
+    }
+}

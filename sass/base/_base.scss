@@ -1,0 +1,36 @@
+*,
+*::after,
+*::before{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+
+    @include respond(tabLand){
+        font-size: 9px; 
+    }
+    @include respond(tabPort){
+        font-size: 6px;
+    }
+    @include respond(phone){
+        font-size: 5px;
+    }
+    @include respond(bigDesk){
+        font-size:12px;
+    }
+}
+body{
+    padding: 3rem;
+    box-sizing: border-box;
+    @include respond(tabPort){
+        padding: 0px;
+    }
+
+}
+
+::selection{
+    background-color: yellow;
+    color: black;
+}
