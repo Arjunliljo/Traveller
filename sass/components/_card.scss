@@ -219,9 +219,12 @@
             &__price-box {
                 margin-bottom: 3rem;
             }
+            &__price-only {
+                font-size: 3rem;
+            }
 
             &__price-value {
-                font-size: 4rem;
+                font-size: 8rem;
                 margin-bottom: 0px;
             }
      }

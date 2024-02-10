@@ -159,7 +159,7 @@ body {
     .paragraph {
       font-size: 3rem;
       text-align: justify;
-      text-align-last: justify;
+      text-align-last: left;
       hyphens: manual; } }
 
 .u-center-text {
@@ -217,6 +217,9 @@ body {
 .row {
   max-width: 114rem;
   margin: 0 auto; }
+  @media (max-width: 900px) {
+    .row {
+      margin: 0 auto; } }
   .row:not(:last-child) {
     margin-bottom: 8rem; }
   .row [class^="col-"] {
@@ -233,7 +236,7 @@ body {
         text-align: center; } }
   @media (max-width: 900px) {
     .row {
-      max-width: 60rem;
+      max-width: 75rem;
       font-size: 2rem; } }
   .row::after {
     content: "";
@@ -328,7 +331,8 @@ body {
   height: 100vh;
   width: 0;
   opacity: 0;
-  transition: all .2s; }
+  transition: all .2s;
+  visibility: hidden; }
 
 .navigation__list {
   position: absolute;
@@ -825,8 +829,10 @@ body {
         padding: 7rem 4rem 4rem 4rem; }
       .card__price-box {
         margin-bottom: 3rem; }
+      .card__price-only {
+        font-size: 3rem; }
       .card__price-value {
-        font-size: 4rem;
+        font-size: 8rem;
         margin-bottom: 0px; } }
 
 .story {
@@ -1020,7 +1026,9 @@ body {
   margin-top: -20vh; }
   @media (max-width: 900px) {
     .section-about {
-      margin-top: -12vh; } }
+      margin-top: -12vh; }
+      .section-about .heading-thertiary:not(:first-child) {
+        margin-top: 8rem; } }
 
 .section-features {
   padding: 18rem 0;
@@ -1058,7 +1066,7 @@ body {
 .book {
   height: 50rem;
   background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(../img/nat-10.jpg);
-  background-size: 100%; }
+  background-size: cover; }
   @media (max-width: 900px) {
     .book {
       background-image: linear-gradient(to right, rgba(255, 255, 255, 0.9), silver), url(../img/nat-10.jpg);

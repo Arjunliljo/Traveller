@@ -101,7 +101,7 @@ body{
     @include respond(tabPort){
         font-size: 3rem;
         text-align: justify;
-        text-align-last: justify;
+        text-align-last: left;
         hyphens: manual;
     }
 }
