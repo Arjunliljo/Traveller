@@ -236,7 +236,7 @@ body {
         text-align: center; } }
   @media (max-width: 900px) {
     .row {
-      max-width: 75rem;
+      max-width: 60rem;
       font-size: 2rem; } }
   .row::after {
     content: "";
